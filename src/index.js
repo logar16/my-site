@@ -9,7 +9,7 @@ import theme from './theme';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    <Router  basename="/my-site">
       <ThemeProvider  theme={theme}>
         <App />
       </ThemeProvider>
