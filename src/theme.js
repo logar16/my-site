@@ -16,7 +16,7 @@ const theme = createMuiTheme({
     },
   },
   typography: {
-    fontFamily: ['"Consolas"', 'Open Sans'].join(',')
+    fontFamily: ['"Consolas"', 'Courier New'].join(',')
     },
 })
 
