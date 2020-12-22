@@ -1,25 +1,63 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from "react";
+import {
+  Switch,
+  Route,
+  useLocation
+} from "react-router-dom";
+import AppBar from '@material-ui/core/AppBar';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
 
-function App() {
+import Home from './pages/home/Home';
+import Resume from './pages/resume/Resume';
+import Projects from './pages/projects/Projects';
+import About from './pages/about/About';
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar/>
+      <Switch>
+        <Route path="/resume">
+          <Resume />
+        </Route>
+        <Route path="/projects">
+          <Projects />
+        </Route>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
     </div>
   );
 }
 
-export default App;
+
+const locations = [
+  '/',
+  '/resume',
+  '/projects',
+  '/about',
+]
+
+function NavBar() {
+  let path = useLocation().pathname
+
+  const [value, setValue] = useState(locations.indexOf(path))
+  const handleChange = (event, newValue) => {
+    setValue(newValue)
+  }
+  return (
+    <AppBar position="sticky">
+        <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
+          <Tab  label='Home'      href="/"></Tab>
+          <Tab  label='Resume'    href="/resume"></Tab>
+          <Tab  label='Projects'  href="/projects"></Tab>
+          <Tab  label='About'     href="/about"></Tab>
+        </Tabs>
+      </AppBar>
+  )
+}
