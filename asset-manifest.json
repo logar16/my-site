@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/my-site/static/css/main.0324b97f.chunk.css",
-    "main.js": "/my-site/static/js/main.d4300919.chunk.js",
-    "main.js.map": "/my-site/static/js/main.d4300919.chunk.js.map",
+    "main.js": "/my-site/static/js/main.cd769059.chunk.js",
+    "main.js.map": "/my-site/static/js/main.cd769059.chunk.js.map",
     "runtime-main.js": "/my-site/static/js/runtime-main.e874a2e6.js",
     "runtime-main.js.map": "/my-site/static/js/runtime-main.e874a2e6.js.map",
     "static/js/2.f58d9796.chunk.js": "/my-site/static/js/2.f58d9796.chunk.js",
@@ -12,6 +12,8 @@
     "index.html": "/my-site/index.html",
     "static/css/main.0324b97f.chunk.css.map": "/my-site/static/css/main.0324b97f.chunk.css.map",
     "static/js/2.f58d9796.chunk.js.LICENSE.txt": "/my-site/static/js/2.f58d9796.chunk.js.LICENSE.txt",
+    "static/media/amazon.524b5e5c.png": "/my-site/static/media/amazon.524b5e5c.png",
+    "static/media/cgm.04180620.png": "/my-site/static/media/cgm.04180620.png",
     "static/media/gatech.c478aa7c.png": "/my-site/static/media/gatech.c478aa7c.png",
     "static/media/profile.61a0a596.jpg": "/my-site/static/media/profile.61a0a596.jpg",
     "static/media/suu.1d4c635b.png": "/my-site/static/media/suu.1d4c635b.png"
@@ -20,6 +22,6 @@
     "static/js/runtime-main.e874a2e6.js",
     "static/js/2.f58d9796.chunk.js",
     "static/css/main.0324b97f.chunk.css",
-    "static/js/main.d4300919.chunk.js"
+    "static/js/main.cd769059.chunk.js"
   ]
 }
