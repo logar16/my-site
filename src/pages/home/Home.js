@@ -6,6 +6,8 @@ import { Parallax } from "react-parallax";
 import portrait from './profile.jpg';
 import gatech from '../experience/gatech.png'
 import suu from '../experience/suu.png'
+import amazon from '../experience/amazon.png'
+import cgm from '../experience/cgm.png'
 
 const useStyles = makeStyles({
   root: {
@@ -54,6 +56,10 @@ export default function Home() {
         </Grid>
         <Divider  className={classes.divider} variant='middle'></Divider>
         <Typography variant="h3">Work Experience</Typography>
+        <Grid container direction="column" justify="space-evenly">
+          <ExperienceRow  image={amazon}  experience={amazonExperience}/>
+          <ExperienceRow  image={cgm} experience={cgmExperience}/>
+        </Grid>
         <Divider  className={classes.divider} variant='middle'></Divider>
         <Typography>
           Check out the other sections of the site to learn about my education and experience,
@@ -79,6 +85,7 @@ function ExperienceRow({image, experience}) {
           row
           wrap="wrap" 
           justify="center"
+          alignItems="center"
           className={classes.experienceRow}
         >
           <Grid item  xs={6}>
@@ -130,4 +137,16 @@ const gatechExperience = {
   title: "Master of Science",
   subtitle: "Major: Computer Science\nConcentration: Interactive Intelligence",
   details: "Graduated Dec 2020 with GPA 3.80"
+}
+
+const amazonExperience = {
+  title: "Amazon",
+  subtitle: "Software Development Engineer I",
+  details: "Aug 2019 - Sep 2020"
+}
+
+const cgmExperience = {
+  title: "Casino Game Maker",
+  subtitle: "Software Engineer",
+  details: "April 2016 - July 2019"
 }
