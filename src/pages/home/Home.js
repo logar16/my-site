@@ -4,6 +4,7 @@ import { Grid, Typography, Divider } from "@material-ui/core";
 import { Parallax } from "react-parallax";
 
 import {EducationExperience, WorkExperience} from './ExperienceSummary'
+import Contact from '../../common/Contact'
 
 import portrait from './profile.jpg';
 
@@ -59,10 +60,8 @@ export default function Home() {
         </Grid>
 
         <Divider  className={classes.divider} variant='middle'></Divider>
-        
-        <div>
-          Contact info
-        </div>
+
+        <Contact></Contact>
       </div>
     </div>
   );
@@ -78,4 +77,5 @@ Reinforcement Learning and making AI agents that can make decisions on their own
 
 const invite = `Check out the other sections of the site to learn more about my education, experience,
 ongoing projects, and general information about me and how I got here.
-You can also find ways to contact me below. I'm always happy to connect!`
+You can also find ways to contact me below. I'm always happy to connect! 
+Note that I am looking for remote positions at this time if possible.`
