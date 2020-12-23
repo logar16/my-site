@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Typography } from "@material-ui/core";
+import { Grid, Link, Typography } from "@material-ui/core";
 
 import gatechImage from '../experience/gatech.png'
 import suuImage from '../experience/suu.png'
@@ -79,15 +79,19 @@ function ExperienceText(props) {
           {experience.details}
         </Typography>
       </Grid>
+      <Grid item>
+        <Link href={experience.link}>More</Link>
+      </Grid>
     </Grid>
   );
 }
 
 
-function Experience(title, subtitle, details, image) {
+function Experience(title, subtitle, details, link, image) {
   this.title = title;
   this.subtitle = subtitle;
   this.details = details;
+  this.link = link;
   this.image = image;
 }
 
@@ -95,12 +99,14 @@ const gatech = new Experience(
   "Master of Science",
   "Major: Computer Science\nConcentration: Interactive Intelligence",
   "Graduated Dec 2020 with GPA 3.80",
+  "/experience",
   gatechImage
 );
 const suu = new Experience(
   "Bachelor of Science",
   "Major: Biology\nMinor: Chemistry",
   "Graduated May 2016 with GPA 3.77",
+  "/experience",
   suuImage
 );
 
@@ -108,6 +114,7 @@ const amazon = new Experience(
   "Amazon",
   "Software Development Engineer I",
   "Aug 2019 - Sep 2020",
+  "/experience",
   amazonImage
 );
 
@@ -115,5 +122,6 @@ const cgm = new Experience(
   "Casino Game Maker",
   "Software Engineer",
   "April 2016 - July 2019",
+  "/experience",
   cgmImage
 );
