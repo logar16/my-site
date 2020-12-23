@@ -10,7 +10,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 
 import Home from './pages/home/Home';
-import Resume from './pages/resume/Resume';
+import Experience from './pages/experience/Experience';
 import Projects from './pages/projects/Projects';
 import About from './pages/about/About';
 
@@ -19,8 +19,8 @@ export default function App() {
     <div>
       <NavBar/>
       <Switch>
-        <Route path="/resume">
-          <Resume />
+        <Route path="/experience">
+          <Experience />
         </Route>
         <Route path="/projects">
           <Projects />
@@ -39,7 +39,7 @@ export default function App() {
 
 const locations = [
   '/',
-  '/resume',
+  '/experience',
   '/projects',
   '/about',
 ]
@@ -49,15 +49,17 @@ function NavBar() {
   // console.log("path:", path)
   const [value, setValue] = useState(locations.indexOf(path))
   const handleChange = (event, newValue) => {
-    setValue(newValue)
+    setValue(newValue);
+    // console.log(newValue);
   }
+  const style = { fontSize: 24 };
   return (
     <AppBar position="sticky">
-        <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
-          <Tab  label='Home'      component={Link}  to="/"></Tab>
-          <Tab  label='Resume'    component={Link}  to="/resume"></Tab>
-          <Tab  label='Projects'  component={Link}  to="/projects"></Tab>
-          <Tab  label='About'     component={Link}  to="/about"></Tab>
+        <Tabs value={value} onChange={handleChange}>
+          <Tab  label='Home'        to="/"  component={Link} style={style}/>
+          <Tab  label='Experience'  to="/experience"  component={Link} style={style}/>
+          <Tab  label='Projects'    to="/projects"  component={Link} style={style}/>
+          <Tab  label='About'       to="/about" component={Link} style={style}/>
         </Tabs>
       </AppBar>
   )
