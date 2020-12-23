@@ -44,8 +44,6 @@ function ExperienceSummary({experience}) {
     <Grid item>
         <Grid 
           container 
-          row
-          wrap="wrap" 
           justify="center"
           alignItems="center"
           className={classes.row}
