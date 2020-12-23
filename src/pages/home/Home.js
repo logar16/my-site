@@ -13,7 +13,6 @@ const useStyles = makeStyles({
   },
   divider: {
     margin: 30,
-    // width: 100
   },
   longText: {
     maxWidth: 800,
@@ -34,24 +33,33 @@ export default function Home() {
       </div>
       <div>
         <Divider  className={classes.divider} variant='middle'></Divider>
+
         <Grid container justify="center">
           <Grid item>
             <Typography className={classes.longText} variant="body1">{elevatorPitch}</Typography>
           </Grid>
         </Grid>
+
         <Divider  className={classes.divider} variant='middle'></Divider>
+
         <Typography variant="h3">Education</Typography>
         <EducationExperience/>
+
         <Divider  className={classes.divider} variant='middle'></Divider>
+
         <Typography variant="h3">Work Experience</Typography>
         <WorkExperience/>
+
         <Divider  className={classes.divider} variant='middle'></Divider>
+
         <Grid container justify="center">
           <Grid item>
             <Typography className={classes.longText} variant="body1">{invite}</Typography>
           </Grid>
         </Grid>
+
         <Divider  className={classes.divider} variant='middle'></Divider>
+        
         <div>
           Contact info
         </div>
