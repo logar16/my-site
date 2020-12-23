@@ -1,7 +1,8 @@
 import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Typography, Divider } from "@material-ui/core";
+import { Grid, Typography, Divider, Fab } from "@material-ui/core";
 import { Parallax } from "react-parallax";
+import KeyboardArrowDown from '@material-ui/icons/KeyboardArrowDown';
 
 import {EducationExperience, WorkExperience} from './ExperienceSummary'
 import Contact from '../../common/Contact'
@@ -28,12 +29,25 @@ export default function Home() {
       <div>
         <Parallax bgImage={portrait}  strength={500}>
           <div style={{ height: 600 }}>
-            {/* <div>HTML inside the parallax</div> */}
+            <Grid 
+              style={{ height: "100%" }}
+              container 
+              direction='row-reverse' 
+              justify='flex-start' 
+              alignItems='flex-end'
+            >
+              <Grid item  style={{ margin: 30 }}>
+                <Fab  href="#start">
+                  <KeyboardArrowDown></KeyboardArrowDown>
+                </Fab>
+              </Grid>
+            </Grid>
           </div>
         </Parallax>
       </div>
+      <div  id="start"></div>
       <div>
-        <Divider  className={classes.divider} variant='middle'></Divider>
+        <Divider className={classes.divider} variant='middle'></Divider>
 
         <Grid container justify="center">
           <Grid item>
