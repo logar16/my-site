@@ -3,11 +3,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Grid, Typography, Divider } from "@material-ui/core";
 import { Parallax } from "react-parallax";
 
+import {EducationExperience, WorkExperience} from './ExperienceSummary'
+
 import portrait from './profile.jpg';
-import gatech from '../experience/gatech.png'
-import suu from '../experience/suu.png'
-import amazon from '../experience/amazon.png'
-import cgm from '../experience/cgm.png'
 
 const useStyles = makeStyles({
   root: {
@@ -20,13 +18,6 @@ const useStyles = makeStyles({
   longText: {
     maxWidth: 800,
   },
-  logos: {
-    maxWidth: 400,
-    maxHeight: 200
-  },
-  experienceRow: {
-    padding: "5% 10% 5%",
-  }
 });
 
 export default function Home() {
@@ -50,16 +41,10 @@ export default function Home() {
         </Grid>
         <Divider  className={classes.divider} variant='middle'></Divider>
         <Typography variant="h3">Education</Typography>
-        <Grid container direction="column" justify="space-evenly">
-          <ExperienceRow  image={gatech}  experience={gatechExperience}/>
-          <ExperienceRow  image={suu} experience={suuExperience}/>
-        </Grid>
+        <EducationExperience/>
         <Divider  className={classes.divider} variant='middle'></Divider>
         <Typography variant="h3">Work Experience</Typography>
-        <Grid container direction="column" justify="space-evenly">
-          <ExperienceRow  image={amazon}  experience={amazonExperience}/>
-          <ExperienceRow  image={cgm} experience={cgmExperience}/>
-        </Grid>
+        <WorkExperience/>
         <Divider  className={classes.divider} variant='middle'></Divider>
         <Grid container justify="center">
           <Grid item>
@@ -76,85 +61,12 @@ export default function Home() {
 }
 
 
-function ExperienceRow({image, experience}) {
-  const classes = useStyles();
-  return (
-    <Grid item>
-      {/* <Paper> */}
-        <Grid 
-          container 
-          row
-          wrap="wrap" 
-          justify="center"
-          alignItems="center"
-          className={classes.experienceRow}
-        >
-          <Grid item  xs={6}>
-            <img  className={classes.logos} src={image} alt=""/>
-          </Grid>
-          <Grid item  xs={6}>
-            <ExperienceText>{experience}</ExperienceText>
-          </Grid>
-        </Grid>
-      {/* </Paper> */}
-    </Grid>
-  );
-}
-
-function ExperienceText(props) {
-  let experience = props.children;
-
-  return (
-    <Grid container direction="column">
-      <Grid item>
-        <Typography variant="h4">
-          {experience.title}
-        </Typography>
-      </Grid>
-      <Grid item>
-        <Typography variant="h6" style={{whiteSpace: "pre-line"}}>
-          {experience.subtitle}
-        </Typography>
-      </Grid>
-      <Grid item>
-        <Typography variant="h6">
-          {experience.details}
-        </Typography>
-      </Grid>
-    </Grid>
-  );
-}
 
 const elevatorPitch = `Hello! My name is Logan Jones. I'm a self-taught programmer with a Master’s degree in 
 Artificial Intelligence and Machine Learning and over four years of 
 work experience as a Software Engineer. 
 I'm trying to break into a new role as a ML researcher and engineer.  I love
 Reinforcement Learning and making AI agents that can make decisions on their own.`
-
-const suuExperience = {
-  title: "Bachelor of Science",
-  subtitle: "Major: Biology\nMinor: Chemistry",
-  details: "Graduated May 2016 with GPA 3.77"
-}
-
-const gatechExperience = {
-  title: "Master of Science",
-  subtitle: "Major: Computer Science\nConcentration: Interactive Intelligence",
-  details: "Graduated Dec 2020 with GPA 3.80"
-}
-
-const amazonExperience = {
-  title: "Amazon",
-  subtitle: "Software Development Engineer I",
-  details: "Aug 2019 - Sep 2020"
-}
-
-const cgmExperience = {
-  title: "Casino Game Maker",
-  subtitle: "Software Engineer",
-  details: "April 2016 - July 2019"
-}
-
 
 const invite = `Check out the other sections of the site to learn more about my education, experience,
 ongoing projects, and general information about me and how I got here.
