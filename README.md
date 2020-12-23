@@ -11,6 +11,7 @@ Not only do I have a master's degree in Artificial Intelligence and Machine Lear
 - [ ] Home Page
   - [ ] Some indication that viewer should scroll down to see content
   - [ ] More links in the overview
+  - [ ] Better support for mobile (stop overlapping of grid components!)
 - [ ] Experience Page
 - [ ] Projects Page
 - [ ] About Page
