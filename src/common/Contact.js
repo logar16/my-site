@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Link, makeStyles, Typography } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import { List, ListItem, ListItemIcon, ListItemText } from "@material-ui/core";
 import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
