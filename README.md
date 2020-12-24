@@ -10,8 +10,10 @@ Not only do I have a master's degree in Artificial Intelligence and Machine Lear
   - [ ] Allow toggling by viewer
 - [ ] Home Page
   - [x] Some indication that viewer should scroll down to see content
-  - [ ] More links in the overview
+  - [x] More links in the overview
   - [ ] Better support for mobile (stop overlapping of grid components!)
 - [ ] Experience Page
+  - [ ] Fill in experiences
+  - [ ] Make Tabs more prominent
 - [ ] Projects Page
 - [ ] About Page

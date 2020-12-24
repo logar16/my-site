@@ -91,7 +91,7 @@ function Experience(title, subtitle, details, link, image) {
   this.title = title;
   this.subtitle = subtitle;
   this.details = details;
-  this.link = link;
+  this.link = `/my-site/experience?xp=${link}#switcher`;
   this.image = image;
 }
 
@@ -99,14 +99,14 @@ const gatech = new Experience(
   "Master of Science",
   "Major: Computer Science\nConcentration: Interactive Intelligence",
   "Graduated Dec 2020 with GPA 3.80",
-  "/experience",
+  "gatech",
   gatechImage
 );
 const suu = new Experience(
   "Bachelor of Science",
   "Major: Biology\nMinor: Chemistry",
   "Graduated May 2016 with GPA 3.77",
-  "/experience",
+  "suu",
   suuImage
 );
 
@@ -114,7 +114,7 @@ const amazon = new Experience(
   "Amazon",
   "Software Development Engineer I",
   "Aug 2019 - Sep 2020",
-  "/experience",
+  "amazon",
   amazonImage
 );
 
@@ -122,6 +122,6 @@ const cgm = new Experience(
   "Casino Game Maker",
   "Software Engineer",
   "April 2016 - July 2019",
-  "/experience",
+  "cgm",
   cgmImage
 );

@@ -6,7 +6,7 @@ import StartImage from '../../common/StartImage'
 import Contact from '../../common/Contact'
 
 import codingImage from './coding.png';
-import { Divider } from "@material-ui/core";
+import { Divider, Grid, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles({
   root: {
@@ -20,7 +20,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function Experience() {
+export default function ExperiencePage() {
   const classes = useStyles();
 
   return (
@@ -30,10 +30,63 @@ export default function Experience() {
       </div>
       <div  id="start"></div>
       <div>
-        <ExperienceSwitcher/>
+        <ExperienceSwitcher>
+          <GatechExperience id="gatech"/>
+          <SuuExperience    id="suu"/>
+          <AmazonExperience id="amazon"/>
+          <CgmExperience    id="cgm"/>
+        </ExperienceSwitcher>
       </div>
       <Divider  className={classes.divider}  variant='middle'/>
       <Contact/>
     </div>
   );
+}
+
+function Experience(props) {
+  return (
+    <div>
+      <div>
+        <Typography variant='h3'>
+          {props.title}
+        </Typography>
+        <Grid container direction='column'>
+          <Grid item>
+            <Typography variant='h5'>
+              {props.subtitle}
+            </Typography>
+          </Grid>
+
+          <Grid item>
+            <Typography>
+                {props.details}
+              </Typography>
+          </Grid>
+        </Grid>
+      </div>
+      {/* Other */}
+      <div>
+        {props.children}
+      </div>
+    </div>
+
+  )
+}
+
+function GatechExperience() {
+  return <Experience  
+    title="Georgia Institute of Technology"
+    subtitle="Master of Computer Science"
+    details="The following stuff happened and I learned a lot..."
+    >
+  </Experience>;
+}
+function SuuExperience() {
+  return <Experience  title="Southern Utah University"/>;
+}
+function AmazonExperience() {
+  return <Experience title="Amazon.com"/>;
+}
+function CgmExperience() {
+  return <Experience title="Casino Game Maker Inc."/>;
 }
