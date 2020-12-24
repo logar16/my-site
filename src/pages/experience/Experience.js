@@ -1,8 +1,8 @@
 import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Typography, Divider, Fab } from "@material-ui/core";
-import { Parallax } from "react-parallax";
-import KeyboardArrowDown from '@material-ui/icons/KeyboardArrowDown';
+// import { Grid, Typography, Divider } from "@material-ui/core";
+
+import StartImage from '../../common/StartImage'
 
 import codingImage from './coding.png';
 
@@ -24,30 +24,12 @@ export default function Experience() {
   return (
     <div className={classes.root}>
       <div>
-        <Parallax bgImage={codingImage}  strength={500}>
-          <div style={{ height: 600 }}>
-            <Grid 
-              style={{ height: "100%" }}
-              container 
-              direction='row-reverse' 
-              justify='flex-start' 
-              alignItems='flex-end'
-            >
-              <Grid item  style={{ margin: 30 }}>
-                <Fab  href="#start">
-                  <KeyboardArrowDown></KeyboardArrowDown>
-                </Fab>
-              </Grid>
-            </Grid>
-          </div>
-        </Parallax>
+        <StartImage bgImage={codingImage}/>
       </div>
       <div  id="start"></div>
       <div>
 
       </div>
-      <div style={{ height: 600 }}></div>
-      <div style={{ height: 600 }}></div>
     </div>
   );
 }

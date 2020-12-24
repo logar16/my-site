@@ -1,11 +1,10 @@
 import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Typography, Divider, Fab } from "@material-ui/core";
-import { Parallax } from "react-parallax";
-import KeyboardArrowDown from '@material-ui/icons/KeyboardArrowDown';
+import { Grid, Typography, Divider } from "@material-ui/core";
 
-import {EducationExperience, WorkExperience} from './ExperienceSummary'
+import StartImage from '../../common/StartImage'
 import Contact from '../../common/Contact'
+import {EducationExperience, WorkExperience} from './ExperienceSummary'
 
 import portrait from './profile.jpg';
 
@@ -27,23 +26,7 @@ export default function Home() {
   return (
     <div className={classes.root}>
       <div>
-        <Parallax bgImage={portrait}  strength={500}>
-          <div style={{ height: 600 }}>
-            <Grid 
-              style={{ height: "100%" }}
-              container 
-              direction='row-reverse' 
-              justify='flex-start' 
-              alignItems='flex-end'
-            >
-              <Grid item  style={{ margin: 30 }}>
-                <Fab  href="#start">
-                  <KeyboardArrowDown></KeyboardArrowDown>
-                </Fab>
-              </Grid>
-            </Grid>
-          </div>
-        </Parallax>
+        <StartImage bgImage={portrait}/>
       </div>
       <div  id="start"></div>
       <div>
