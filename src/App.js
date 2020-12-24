@@ -55,12 +55,12 @@ function NavBar() {
   const style = { fontSize: 24 };
   return (
     <AppBar position="sticky">
-        <Tabs value={value} onChange={handleChange}>
-          <Tab  label='Home'        to="/"  component={Link} style={style}/>
-          <Tab  label='Experience'  to="/experience"  component={Link} style={style}/>
-          <Tab  label='Projects'    to="/projects"  component={Link} style={style}/>
-          <Tab  label='About'       to="/about" component={Link} style={style}/>
-        </Tabs>
-      </AppBar>
+      <Tabs value={value} onChange={handleChange}>
+        <Tab  label='Home'        to="/"  component={Link} style={style}/>
+        <Tab  label='Experience'  to="/experience"  component={Link} style={style}/>
+        <Tab  label='Projects'    to="/projects"  component={Link} style={style}/>
+        <Tab  label='About'       to="/about" component={Link} style={style}/>
+      </Tabs>
+    </AppBar>
   )
 }
