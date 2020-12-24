@@ -6,7 +6,8 @@ import KeyboardArrowDown from '@material-ui/icons/KeyboardArrowDown';
 export default function StartImage(props) {
     var bgImage = props.bgImage
     var strength = props.strength || 500;
-    var height = props.height || 600;
+    var height = props.height || window.innerHeight - 50;
+    height = Math.max(height, 100);
     return <Parallax bgImage={bgImage} strength={strength}>
       <div style={{ 'height': height }}>
         <Grid
