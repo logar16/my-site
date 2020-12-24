@@ -1,10 +1,12 @@
 import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
-// import { Grid, Typography, Divider } from "@material-ui/core";
 
+import ExperienceSwitcher from './Switch'
 import StartImage from '../../common/StartImage'
+import Contact from '../../common/Contact'
 
 import codingImage from './coding.png';
+import { Divider } from "@material-ui/core";
 
 const useStyles = makeStyles({
   root: {
@@ -28,8 +30,10 @@ export default function Experience() {
       </div>
       <div  id="start"></div>
       <div>
-
+        <ExperienceSwitcher/>
       </div>
+      <Divider  className={classes.divider}  variant='middle'/>
+      <Contact/>
     </div>
   );
 }
