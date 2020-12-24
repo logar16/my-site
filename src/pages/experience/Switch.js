@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AppBar, Tabs, Tab, Paper } from "@material-ui/core";
-import { useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const locations = [
   'gatech',
@@ -11,17 +11,17 @@ const locations = [
 
 
 export default function ExperienceSwitcher(props) {
-  var query = new URLSearchParams(useLocation().search);
-  var index = locations.indexOf(query.get("xp"))
+  let {id} = useParams();
+  var index = locations.indexOf(id)
   index = Math.max(0, index)
-  // console.log(`query; ${query.get("xp")}, index: ${index}`
+  console.log(`id: ${id}, index: ${index}`)
   // var history = useHistory()
   const [value, setValue] = useState(index)
   const handleChange = (event, newValue) => {
     setValue(newValue);
     // history.push("/experience") //Clean up the URL, but it dilutes the history
   }
-
+  console.log("value:", value)
   return (
       <Paper>
         <AppBar id="switcher" position="sticky" color="transparent">

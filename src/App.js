@@ -19,7 +19,7 @@ export default function App() {
     <div>
       <NavBar/>
       <Switch>
-        <Route path="/experience">
+        <Route path={["/experience/:id", "/experience"]}>
           <Experience />
         </Route>
         <Route path="/projects">
@@ -45,9 +45,10 @@ const locations = [
 ]
 
 function NavBar() {
-  let path = useLocation().pathname
-  // console.log("path:", path)
-  const [value, setValue] = useState(locations.indexOf(path))
+  let path = useLocation().pathname.split('/')[1]
+  console.log("path:", path)
+  let index = Math.max(0, locations.indexOf(path))
+  const [value, setValue] = useState(index)
   const handleChange = (event, newValue) => {
     setValue(newValue);
     // console.log(newValue);
@@ -56,10 +57,10 @@ function NavBar() {
   return (
     <AppBar position="sticky">
       <Tabs value={value} onChange={handleChange}>
-        <Tab  label='Home'        to="/"  component={Link} style={style}/>
-        <Tab  label='Experience'  to="/experience"  component={Link} style={style}/>
-        <Tab  label='Projects'    to="/projects"  component={Link} style={style}/>
-        <Tab  label='About'       to="/about" component={Link} style={style}/>
+        <Tab  label='Home'        to=""  component={Link} style={style}/>
+        <Tab  label='Experience'  to="experience"  component={Link} style={style}/>
+        <Tab  label='Projects'    to="projects"  component={Link} style={style}/>
+        <Tab  label='About'       to="about" component={Link} style={style}/>
       </Tabs>
     </AppBar>
   )

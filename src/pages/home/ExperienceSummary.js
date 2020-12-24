@@ -91,7 +91,7 @@ function Experience(title, subtitle, details, link, image) {
   this.title = title;
   this.subtitle = subtitle;
   this.details = details;
-  this.link = `/my-site/experience?xp=${link}#switcher`;
+  this.link = `/my-site/experience/${link}#switcher`;
   this.image = image;
 }
 
