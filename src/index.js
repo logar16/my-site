@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter as Router} from "react-router-dom";
+import {HashRouter as Router} from "react-router-dom";
 import { ThemeProvider } from '@material-ui/core/styles';
 import theme from './theme';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router  basename="/my-site">
+    <Router>
       <ThemeProvider  theme={theme}>
         <App />
       </ThemeProvider>

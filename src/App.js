@@ -39,9 +39,9 @@ export default function App() {
 
 const locations = [
   '/',
-  '/experience',
-  '/projects',
-  '/about',
+  '/#/experience',
+  '/#/projects',
+  '/#/about',
 ]
 
 function NavBar() {
