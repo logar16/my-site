@@ -39,20 +39,23 @@ export default function App() {
 
 const locations = [
   '/',
-  '/#/experience',
-  '/#/projects',
-  '/#/about',
+  'experience',
+  'projects',
+  'about',
 ]
 
 function NavBar() {
-  let path = useLocation().pathname.split('/')[1]
-  // console.log("path:", path)
-  let index = Math.max(0, locations.indexOf(path))
-  const [value, setValue] = useState(index)
+  let path = useLocation().pathname.split('/')[1];
+  let index = Math.max(0, locations.indexOf(path));
+  const [value, setValue] = useState(index);
   const handleChange = (event, newValue) => {
     setValue(newValue);
-    // console.log(newValue);
   }
+  if (index !== value) {
+    setValue(index)
+  }
+  // console.log(`path: ${path}, index: ${index}, value: ${value}`);
+
   const style = { fontSize: 24 };
   return (
     <AppBar position="sticky">

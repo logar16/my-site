@@ -22,13 +22,18 @@ const useStyles = makeStyles({
 
 export default function ExperiencePage() {
   const classes = useStyles();
+  const startRef = React.useRef();
+
+  const clickHandler = () => {
+    startRef.current.scrollIntoView();
+  }
 
   return (
     <div className={classes.root}>
       <div>
-        <StartImage bgImage={codingImage}/>
+        <StartImage onClick={clickHandler} bgImage={codingImage}/>
       </div>
-      <div  id="start"></div>
+      <div ref={startRef}></div>
       <div>
         <ExperienceSwitcher>
           <GatechExperience id="gatech"/>

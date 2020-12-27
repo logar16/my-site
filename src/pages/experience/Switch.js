@@ -21,19 +21,24 @@ export default function ExperienceSwitcher(props) {
     setValue(newValue);
     // history.push("/experience") //Clean up the URL, but it dilutes the history
   }
+
+  const style = { fontSize: 20 };
+
   return (
       <Paper>
         <AppBar id="switcher" position="sticky" color="transparent">
           <Tabs 
+            centered
             value={value} 
             onChange={handleChange}
             indicatorColor="primary"
             textColor="primary"
+            style={{backgroundColor: 'primary'}}
           >
-            <Tab  label='GA Tech' />
-            <Tab  label='SUU'     />
-            <Tab  label='Amazon'  />
-            <Tab  label='CGM'     />
+            <Tab  label='GA Tech' style={style} />
+            <Tab  label='SUU'     style={style} />
+            <Tab  label='Amazon'  style={style} />
+            <Tab  label='CGM'     style={style} />
           </Tabs>
         </AppBar>
         <DynamicDisplay value={locations[value]}>{props.children}</DynamicDisplay>
