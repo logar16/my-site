@@ -22,13 +22,18 @@ const useStyles = makeStyles({
 
 export default function Home() {
   const classes = useStyles();
+  const startRef = React.useRef();
+
+  const clickHandler = () => {
+    startRef.current.scrollIntoView();
+  }
 
   return (
     <div className={classes.root}>
       <div>
-        <StartImage bgImage={portrait}/>
+        <StartImage onClick={clickHandler} bgImage={portrait}/>
       </div>
-      <div  id="start"></div>
+      <div  ref={startRef}></div>
       <div>
         <Divider className={classes.divider} variant='middle'></Divider>
 

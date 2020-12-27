@@ -50,6 +50,7 @@ function NavBar() {
   const [value, setValue] = useState(index);
   const handleChange = (event, newValue) => {
     setValue(newValue);
+    window.scrollTo({top: 0});
   }
   if (index !== value) {
     setValue(index)
