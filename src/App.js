@@ -46,7 +46,7 @@ const locations = [
 
 function NavBar() {
   let path = useLocation().pathname.split('/')[1]
-  console.log("path:", path)
+  // console.log("path:", path)
   let index = Math.max(0, locations.indexOf(path))
   const [value, setValue] = useState(index)
   const handleChange = (event, newValue) => {

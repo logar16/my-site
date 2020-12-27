@@ -14,14 +14,13 @@ export default function ExperienceSwitcher(props) {
   let {id} = useParams();
   var index = locations.indexOf(id)
   index = Math.max(0, index)
-  console.log(`id: ${id}, index: ${index}`)
+  // console.log(`id: ${id}, index: ${index}`)
   // var history = useHistory()
   const [value, setValue] = useState(index)
   const handleChange = (event, newValue) => {
     setValue(newValue);
     // history.push("/experience") //Clean up the URL, but it dilutes the history
   }
-  console.log("value:", value)
   return (
       <Paper>
         <AppBar id="switcher" position="sticky" color="transparent">
