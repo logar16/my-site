@@ -7,7 +7,7 @@ export default function StartImage(props) {
     var clickHandler = props.onClick;
     var bgImage = props.bgImage
     var strength = props.strength || 500;
-    var height = props.height || window.innerHeight - 50;
+    var height = props.height || window.innerHeight - 100;
     height = Math.max(height, 100);
 
     return (
