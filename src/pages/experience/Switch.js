@@ -35,7 +35,7 @@ export default function ExperienceSwitcher(props) {
             textColor="primary"
             style={{backgroundColor: 'primary'}}
           >
-            <Tab  label='GA Tech' style={style} />
+            <Tab  label='Georgia Tech' style={style} />
             <Tab  label='SUU'     style={style} />
             <Tab  label='Amazon'  style={style} />
             <Tab  label='CGM'     style={style} />
