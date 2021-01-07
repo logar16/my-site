@@ -48,24 +48,26 @@ export default function GatechExperience() {
 function GatechSummary() {
   let classes = useStyles();
   return (
-    <ul className={classes.lists}>
-      <li>Degree specialization in Artificial Intelligence and Machine Learning</li>
-      <li>Completed challenging assignments by leveraging skills in Python and powerful libraries such as NumPy, SciPy, pandas, and the neural network libraries Keras and PyTorch</li>
-      <li>Built AI/ML agents that solved problems using modern AI/ML techniques such as as (bolded were built from scratch, others were using open-source implementations):
-        <ul>
-          <li><i>Reinforcement Learning</i>: <b>Value/Policy Iteration, Q-Learning, Deep Q-Networks</b>, multi-agent training in zero-sum environments</li>
-          <li><i>Supervised Learning</i>: <b>Deep Convolutional Neural Nets</b> (several visual tasks from classification to style transfer), <b>Decision Trees and Random Forests</b>, K-Nearest Neighbors, Support Vector Machines, as well as Bagging and Boosting
-            <ul>
-              <li><i>Machine Translation</i>: <b>RNNs, LSTMs, Seq2Seq, and Transformer Encoder</b></li>
-            </ul>
-          </li>
-          <li><i>Unsupervised Learning</i>: <b>Simulated Annealing</b>, Genetic Algorithms, MIMIC, PCA, ICA, and Expectation Maximization</li>
-          <li><i>Search</i>: <b>A* Search</b>, and <b>Minimax</b> (with Alpha-Beta Pruning)</li>
-        </ul>
-      </li>
-      <li>Collaborated with teams to build a prenatal healthcare application</li>
-      <li>Gained experience with Unity's ML-Agents during a team project that explored multi-agent Reinforcement Learning models with memory and attention</li>
-    </ul>
+    <Typography component='div'>
+      <ul className={classes.lists}>
+        <li>Degree specialization in Artificial Intelligence and Machine Learning</li>
+        <li>Completed challenging assignments by leveraging skills in Python and powerful libraries such as NumPy, SciPy, pandas, and the neural network libraries Keras and PyTorch</li>
+        <li>Built AI/ML agents that solved problems using modern AI/ML techniques such as as (bolded were built from scratch, others were using open-source implementations):
+          <ul>
+            <li><i>Reinforcement Learning</i>: <b>Value/Policy Iteration, Q-Learning, Deep Q-Networks</b>, multi-agent training in zero-sum environments</li>
+            <li><i>Supervised Learning</i>: <b>Deep Convolutional Neural Nets</b> (several visual tasks from classification to style transfer), <b>Decision Trees and Random Forests</b>, K-Nearest Neighbors, Support Vector Machines, as well as Bagging and Boosting
+              <ul>
+                <li><i>Machine Translation</i>: <b>RNNs, LSTMs, Seq2Seq, and Transformer Encoder</b></li>
+              </ul>
+            </li>
+            <li><i>Unsupervised Learning</i>: <b>Simulated Annealing</b>, Genetic Algorithms, MIMIC, PCA, ICA, and Expectation Maximization</li>
+            <li><i>Search</i>: <b>A* Search</b>, and <b>Minimax</b> (with Alpha-Beta Pruning)</li>
+          </ul>
+        </li>
+        <li>Collaborated with teams to build a prenatal healthcare application</li>
+        <li>Gained experience with Unity's ML-Agents during a team project that explored multi-agent Reinforcement Learning models with memory and attention</li>
+      </ul>
+    </Typography>
   );
 }
 
@@ -89,7 +91,7 @@ function GatechDetails() {
         Through this, I gained greater appreciation for the difficulties of deep learning as well as became aware of many more interesting applications of the technology.
         This class exposed me to <b>PyTorch</b>, a neural network library that I now greatly enjoy.
         Along with lectures from a quality professor, I received instruction from ML researchers at Facebook applying DL in the real world.
-        For <a  href="https://github.gatech.edu/ljones91/cs7643-project" target="_blank">the final project</a>, 
+        For <a  href="https://github.gatech.edu/ljones91/cs7643-project" target="_blank" rel='noreferrer'>the final project</a>, 
         I worked with a team to train and analyze multi-agent Reinforcement Learning models trained with limited observations and the addition of memory.
         This was done using the Unity ML-Agents Soccer-Twos environment and the ML-Agents training code (with some modifications).
       </Section>
