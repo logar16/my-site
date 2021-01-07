@@ -84,6 +84,12 @@ function GatechDetails() {
 
   return (
     <Grid container>
+      <Section>
+        This degree was an awesome opportunity to learn new things and stretch myself. 
+        I worked full-time while working on this degree part-time, and it was not easy.
+        It changed my mind about several things related to technology and inspired me as to what I want out of a career.
+        Below are some specific skills I learned, organized by course.
+      </Section>
       <Section  title='Deep Learning' id='DL'>
         In this class, I learned about automatic differentiation, the nuances of gradient descent (e.g. vanishing gradients),
         and modern applications of deep neural networks in supervised, unsupervised and reinforcement learning domains.
