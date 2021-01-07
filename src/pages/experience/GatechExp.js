@@ -107,7 +107,7 @@ function GatechDetails() {
         I also learned how to create an efficient setup for testing and evaluation so that exploration of models and hyperparameters can be done quickly and efficiently.
       </Section>
       <Section  title="Other Courses" id="other">
-        Other courses of interest that I took were:
+        Some other courses of interest that I took were:
         <ul className={classes.innerList}>
           <li>Machine Learning for Trading
             <ul>
@@ -128,6 +128,16 @@ function GatechDetails() {
             <ul>
               <li>Built an AI that could perform as well as a child on the Raven's Progressive Matrices intelligence test</li>
               <li>Learned of the many ways to represent knowledge and understanding for intelligent agents, such as semantic networks, frames, and case-based/analogical/meta methods of reasoning</li>
+            </ul>
+          </li>
+          <li>Intro to Health Informatics
+            <ul>
+              <li>Built a pretty decent React Web app with no prior experience and in less than 50 hours
+                <ul>
+                  <li>App included multiple pages/views, data display dashboards, and interactions with a database</li>
+                </ul>
+              </li>
+              <li>Learned about FHIR and other healthcare related standards and formats</li>
             </ul>
           </li>
           <li>Software Engineering and Software Architecture
