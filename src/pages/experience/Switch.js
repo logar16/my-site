@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AppBar, Tabs, Tab, Paper } from "@material-ui/core";
+import { AppBar, Tabs, Tab } from "@material-ui/core";
 import { useParams } from "react-router-dom";
 
 const locations = [
@@ -15,8 +15,8 @@ export default function ExperienceSwitcher(props) {
   var index = locations.indexOf(id)
   index = Math.max(0, index)
   // console.log(`id: ${id}, index: ${index}`)
-  // var history = useHistory()
   const [value, setValue] = useState(index)
+  // console.log(`value: ${value}`)
   const handleChange = (event, newValue) => {
     setValue(newValue);
     // history.push("/experience") //Clean up the URL, but it dilutes the history
@@ -25,8 +25,8 @@ export default function ExperienceSwitcher(props) {
   const style = { fontSize: 20 };
 
   return (
-      <Paper>
-        <AppBar id="switcher" position="sticky" color="transparent">
+      <div>
+        <AppBar id="switcher" position="static" color="transparent">
           <Tabs 
             centered
             value={value} 
@@ -42,7 +42,7 @@ export default function ExperienceSwitcher(props) {
           </Tabs>
         </AppBar>
         <DynamicDisplay value={locations[value]}>{props.children}</DynamicDisplay>
-      </Paper>
+      </div>
   );
 }
 
