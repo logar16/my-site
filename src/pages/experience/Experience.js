@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles } from '@material-ui/core/styles';
 
 import ExperienceSwitcher from './Switch'
@@ -43,9 +43,8 @@ export default function ExperiencePage() {
   const classes = useStyles();
   const startRef = React.useRef();
 
-
   const clickHandler = () => {
-    console.log(startRef)
+    // console.log(startRef)
     window.scrollTo(0, startRef.current.offsetTop - 50);
   }
 
@@ -54,9 +53,8 @@ export default function ExperiencePage() {
       <div>
         <StartImage onClick={clickHandler} bgImage={codingImage}/>
       </div>
-      <div ref={startRef}></div>
-      <div>
-        <ExperienceSwitcher>
+      <div  ref={startRef}>
+        <ExperienceSwitcher onChange={clickHandler}>
           <GatechExperience id="gatech"/>
           <SuuExperience    id="suu"/>
           <AmazonExperience id="amazon"/>

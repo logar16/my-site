@@ -39,6 +39,9 @@ function AmazonSummary() {
         <li>
           Safely increased security for a major service by adding OAuth 2.0 based security without any loss of functionality or availability
         </li>
+        <li>
+          Picked up new skills regarding API design and working with a NoSQL database
+        </li>
       </ul>
     </Typography>
   );
@@ -50,6 +53,7 @@ function AmazonDetails() {
       <Section>
         What more can I say?  Talk about TPS rates if we have those and how I worked with data and distributed systems.
         Since we were really careful, sell that...
+        Note that we used some of the
       </Section>
     </Grid>
   );
