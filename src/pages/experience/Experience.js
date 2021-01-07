@@ -4,14 +4,13 @@ import { makeStyles } from '@material-ui/core/styles';
 import ExperienceSwitcher from './Switch'
 import StartImage from '../../common/StartImage'
 import Contact from '../../common/Contact'
+import GatechExperience from './GatechExp'
+import SuuExperience from './SuuExp'
+import AmazonExperience from './AmazonExp'
+import CgmExperience from './CgmExp'
 
 import codingImage from './coding.png';
-import { Divider, Grid, Typography } from "@material-ui/core";
-
-import gatechImage from './gatech.png'
-import suuImage from './suu.png'
-import amazonImage from './amazon.png'
-import cgmImage from './cgm.png'
+import { Divider, Grid, Paper, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -33,6 +32,10 @@ const useStyles = makeStyles((theme) => ({
   },
   lists: {
     ...theme.typography.body1,
+  },
+  text: {
+    textIndent: "2em",
+    marginBottom: 10
   }
 }));
 
@@ -42,7 +45,8 @@ export default function ExperiencePage() {
 
 
   const clickHandler = () => {
-    startRef.current.scrollIntoView(true);
+    console.log(startRef)
+    window.scrollTo(0, startRef.current.offsetTop - 50);
   }
 
   return (
@@ -65,105 +69,95 @@ export default function ExperiencePage() {
   );
 }
 
-function Experience(props) {
+export function Experience(props) {
   let classes = useStyles();
 
   return (
-    <Grid 
-      container 
-      direction='column'
-      alignItems='center'  
-      className={classes.experience}
-    >
-      <Grid container  justify='center'>
-        <img  className={classes.logo}  src={props.image} alt=""/>
-      </Grid>
+    <Paper elevation={3}>
 
       <Grid 
         container 
-        justify="space-around"
-        alignItems="baseline">
-        <Grid item>
-          <Typography variant='h3'>
-            {props.role}
-          </Typography>
+        direction='column'
+        alignItems='center'  
+        className={classes.experience}
+      >
+        <Grid container  justify='center'>
+          <img  className={classes.logo}  src={props.image} alt=""/>
         </Grid>
+
+        <Grid 
+          container 
+          justify="space-between"
+          alignItems="baseline"
+        >
+          <Grid item>
+            <Typography variant='h3'>
+                {props.role}
+            </Typography>
+          </Grid>
+          <Grid item>
+            <Typography variant='h4'>
+              {props.date}
+            </Typography>
+          </Grid>
+        </Grid>
+        
+        <Grid container justify='flex-start'>
+          {props.subtitle}
+        </Grid>
+
         <Grid item>
+          <div  style={{height:20}}></div>
+        </Grid>
+
+        <Grid container  className={classes.body}>
+          <Grid item>
+            <Typography variant='h4'>
+              Summary of Experience
+            </Typography>
+          </Grid>
+          <Grid item>
+            {props.summary}
+          </Grid>
+        </Grid>
+        
+        {/* <Grid item>
+          <Typography variant='body2'>
+            <i>(See more details below)</i>
+          </Typography>
+        </Grid> */}
+
+        <Grid container className={classes.body}>
           <Typography variant='h4'>
-            {props.date}
+            Details
           </Typography>
         </Grid>
-      </Grid>
 
-      <Grid item  className={classes.body}>
+        <Grid container className={classes.body}>
           {props.details}
-      </Grid>
+        </Grid>
 
-      {/* Other */}
-      <div>
-        {props.children}
-      </div>
-    </Grid>
+        {/* Other */}
+        <div>
+          {props.children}
+        </div>
+      </Grid>
+    </Paper>
 
   )
 }
 
-function GatechExperience() {
-  let classes = useStyles();
-  let details = (
-    <ul className={classes.lists}>
-      <li>Specialization in Artificial Intelligence and Machine Learning</li>
-      <li>Completed challenging assignments by leveraging skills in Python and powerful libraries such as NumPy, SciPy, pandas, and the neural network libraries Keras and PyTorch</li>
-      <li>Built AI/ML agents that solved problems using modern AI/ML techniques such as as (bolded were built from scratch, others were using open-source implementations):
-        <ul>
-          <li><i>Reinforcement Learning</i>: Value/Policy Iteration, Q-Learning, Deep Q-Networks, multi-agent training in zero-sum environments</li>
-          <li><i>Supervised Learning</i>: Deep Convolutional Neural Nets (several visual tasks from classification to style transfer), Decision Trees and Random Forests, K-Nearest Neighbors, Support Vector Machines, as well as Bagging and Boosting
-            <ul>
-              <li><i>Machine Translation</i>: RNNs, LSTMs, Seq2Seq, and Transformer Encoder</li>
-            </ul>
-          </li>
-          <li><i>Unsupervised Learning</i>: Simulated Annealing, Genetic Algorithms, MIMIC, PCA, ICA, and Expectation Maximization</li>
-          <li><i>Search</i>: A* Search, and Minimax (with Alpha-Beta Pruning)</li>
-        </ul>
-      </li>
-    </ul>
+
+export function Section(props){
+  const classes = useStyles();
+  return (
+    <Grid item>
+      <Typography variant='h6'>
+        {props.title}
+      </Typography>
+      <Typography variant='body1' component='div'  className={classes.text}>
+        {props.text || props.children}
+      </Typography>
+    </Grid>
   );
-  return (
-  <Experience  
-    role="Master of Computer Science"
-    date="Dec 2020"
-    details={details}
-    image={gatechImage}
-  >
-  </Experience>);
-}
-function SuuExperience() {
-  return (
-    <Experience  
-      role="Master of Computer Science"
-      date="May 2016"
-      details="The following stuff happened and I learned a lot..."
-      image={suuImage}
-    >
-    </Experience>);
-}
-function AmazonExperience() {
-  return (
-    <Experience  
-      role="Software Development Engineer I"
-      date="Aug 2019 - Sept 2020"
-      details="The following stuff happened and I learned a lot..."
-      image={amazonImage}
-    >
-    </Experience>);
-}
-function CgmExperience() {
-  return (
-    <Experience  
-      role="Software Engineer"
-      date="March 2016 - July 2019"
-      details="The following stuff happened and I learned a lot..."
-      image={cgmImage}
-    >
-    </Experience>);
 }
