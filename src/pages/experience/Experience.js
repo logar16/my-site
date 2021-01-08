@@ -44,14 +44,13 @@ export default function ExperiencePage() {
   const startRef = React.useRef();
 
   const clickHandler = () => {
-    // console.log(startRef)
     window.scrollTo(0, startRef.current.offsetTop - 50);
   }
 
   return (
     <div className={classes.root}>
       <div>
-        <StartImage onClick={clickHandler} bgImage={codingImage}/>
+        <StartImage onClick={clickHandler} bgImage={codingImage}  strength={400}/>
       </div>
       <div  ref={startRef}>
         <ExperienceSwitcher onChange={clickHandler}>
