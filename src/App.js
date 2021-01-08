@@ -48,23 +48,25 @@ function NavBar() {
   let path = useLocation().pathname.split('/')[1];
   let index = Math.max(0, locations.indexOf(path));
   const [value, setValue] = useState(index);
+
   const handleChange = (event, newValue) => {
     setValue(newValue);
     window.scrollTo({top: 0});
   }
+
   if (index !== value) {
     setValue(index)
   }
-  // console.log(`path: ${path}, index: ${index}, value: ${value}`);
+  console.log(`path: ${path}, index: ${index}, value: ${value}`);
 
   const style = { fontSize: 24 };
   return (
     <AppBar position="sticky">
       <Tabs value={value} onChange={handleChange}>
         <Tab  label='Home'        to=""  component={Link} style={style}/>
-        <Tab  label='Experience'  to="experience"  component={Link} style={style}/>
-        <Tab  label='Projects'    to="projects"  component={Link} style={style}/>
-        <Tab  label='About'       to="about" component={Link} style={style}/>
+        <Tab  label='Experience'  to="/experience"  component={Link} style={style}/>
+        <Tab  label='Projects'    to="/projects"  component={Link} style={style}/>
+        <Tab  label='About'       to="/about" component={Link} style={style}/>
       </Tabs>
     </AppBar>
   )
