@@ -13,8 +13,6 @@ Not only do I have a master's degree in Artificial Intelligence and Machine Lear
   - [x] More links in the overview
   - [ ] Better support for mobile (stop overlapping of grid components!)
 - [ ] Experience Page
-  - [ ] Fill in experiences
-  - [x] Replace query with /:id slugs
-  - [x] Make Tabs more prominent
+  - [ ] Add a filter for specific types of experience the reader is interested in
 - [ ] Projects Page
 - [ ] About Page
