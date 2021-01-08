@@ -103,7 +103,7 @@ function GatechDetails() {
       </Section>
       <Section  title='Machine Learning'  id='ML'>
         This course included a broad survey of Machine Learning techniques.  I covered traditional classification methods such as decision trees or k-means.
-        I also learned about many new and interesting methods such as neural networks, support vector machines, and expectation maximization.
+        I also learned about many new and interesting methods such as neural networks, support vector machines, K-means clustering, and expectation maximization.
         Assignments included gathering data, training multiple models, and evaluating and comparing their performance in multiple areas.
         I used the <b>SciPy</b> and <b>NumPy</b> libraries extensively.
       </Section>
