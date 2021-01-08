@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
 
 import ExperienceSwitcher from './Switch'
@@ -10,7 +10,7 @@ import AmazonExperience from './AmazonExp'
 import CgmExperience from './CgmExp'
 
 import codingImage from './coding.png';
-import { Divider, Grid, Paper, Typography } from "@material-ui/core";
+import { Divider, Grid, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -71,8 +71,7 @@ export function Experience(props) {
   let classes = useStyles();
 
   return (
-    <Paper elevation={3}>
-
+    // <Paper elevation={3}>
       <Grid 
         container 
         direction='column'
@@ -140,9 +139,8 @@ export function Experience(props) {
           {props.children}
         </div>
       </Grid>
-    </Paper>
-
-  )
+    // </Paper>
+  );
 }
 
 
@@ -150,7 +148,7 @@ export function Section(props){
   const classes = useStyles();
   return (
     <Grid item>
-      <Typography variant='h6'>
+      <Typography variant='h5'>
         {props.title}
       </Typography>
       <Typography variant='body1' component='div'  className={classes.text}>

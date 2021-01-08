@@ -54,13 +54,15 @@ function AmazonDetails() {
         At Amazon, I was part of a small team working in the backend of the eCommerce side of the business.
         Our services tracked inventory availability and fulfillment capabilities for Third-party sellers, a significant portion of Amazon's income.
         I worked with experienced engineers to safely make changes (some small, some significant) to the services without loss of availability or increased latencies.
-        
+        After a year of working there, I came to realize that working in the backend maintaining an established service was not for me.  
+        I was going into my last semester of my <a href='#/experience/gatech?switch=true'>Master's in CS and Machine Learning</a>, and so I left Amazon to focus on finishing my degree and finding the right company for me.
       </Section>
       <Section  title='Increasing Service Responsibilities'>
         One of our services was chosen to consolidate an older, Tier 1 (critical), service's responsibilities.  
-        I was tasked with designing how our service would handle the deprecated service's traffic and among other migration concerns.
-        I designed a new API for our service as well as a method for moving traffic to our service and slowly phasing out the old service without any lost requests or updates.
-        This opportunity improved my understanding of RESTful services greatly.
+        I was tasked with designing how our service would handle the deprecated service's traffic among other migration concerns.
+        I designed a new API for our service as well as a method for moving traffic to our service while slowly phasing out the old one without any lost requests.
+        This opportunity improved my understanding of RESTful service design greatly.  
+        I also gained useful experience with a NoSQL datastore as well.
         <p>
           I implemented the new designs without assistance from team members as they did not know how the REST library/integration worked for that particular service, nor much about how the Guice dependency injection worked.  
           Not only did I implement the new API (without issue in production), but I also wrote up some useful documentation for all who followed.  
@@ -69,15 +71,20 @@ function AmazonDetails() {
         </p>
       </Section>
       <Section  title='Service Ownership'>
-        *FINISH*  
-        Talk about TPS rates if we have those and how I worked with data and distributed systems.
-        <br></br>
-        Due to the distributed nature of our services—80 servers to support traffic to just one of the services—I learned to design using thread-safe practices or avoiding mutable state as much as possible.
-        All of our changes were run through a rigorous alpha and beta stage integration testing suite as well as a barrage of local tests. 
-        I learned to develop with a TDD focus and appreciate the savings of continuous integration/delivery.
+        <p>
+          The services my team and I owned had several APIs with some consistently handling 1000+ TPS.
+          I learned how to work in such a way that availability was <i>never</i> disrupted.
+          Due to the distributed nature of our services—80 servers to support traffic to just one of the services—I learned to design using thread-safe practices like avoiding mutable state as much as possible.
+        </p>
         <p>
           Our goal was mostly to keep the vital services running, but we also had tasks to improve the services and keep them up-to-date.
-          For example, one of my changes helped reduce CPU usage by approximately 50%, allowing us to downscale the fleet and use resources more responsibly.
+          For example, one of my changes helped reduce CPU usage by approximately 50%, allowing us to downscale the fleet and conserve costs.
+        </p>
+        <p>
+          All of our changes were run through a rigorous alpha and beta integration testing suite as well as a barrage of local tests. 
+          I learned to develop with a TDD focus and appreciate the savings of continuous integration/delivery.
+          I also became acquainted with the usefulness of recording metrics.  Almost every change I did included a new metric to help us determine the effectiveness of the change.
+          Improving dashboards (again I like to help others understand my services as well as I do) became an important part of almost every update I pushed out. 
         </p>
       </Section>
     </Grid>
