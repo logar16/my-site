@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Fab, Box, makeStyles } from "@material-ui/core";
+import { Grid, Fab, makeStyles } from "@material-ui/core";
 import { Parallax } from "react-parallax";
 import KeyboardArrowDown from '@material-ui/icons/KeyboardArrowDown';
 
