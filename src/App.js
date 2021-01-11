@@ -57,7 +57,7 @@ function NavBar() {
   if (index !== value) {
     setValue(index)
   }
-  console.log(`path: ${path}, index: ${index}, value: ${value}`);
+  // console.log(`path: ${path}, index: ${index}, value: ${value}`);
 
   const style = { fontSize: 24 };
   return (

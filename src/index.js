@@ -9,13 +9,13 @@ import theme from './theme';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <Router>
       <ThemeProvider  theme={theme}>
         <App />
       </ThemeProvider>
-    </Router>
-  </React.StrictMode>,
+    </Router>,
+  // </React.StrictMode>,
   document.getElementById('root')
 );
 
