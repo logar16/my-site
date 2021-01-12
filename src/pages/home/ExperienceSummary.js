@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Link, Typography } from "@material-ui/core";
+import { Grid, Link, Paper, Typography } from "@material-ui/core";
 
 import gatechImage from '../experience/gatech.png'
 import suuImage from '../experience/suu.png'
@@ -11,7 +11,8 @@ import cgmImage from '../experience/cgm.png'
 const useStyles = makeStyles({
   logos: {
     maxWidth: 400,
-    maxHeight: 200
+    maxHeight: 300,
+    backgroundColor: 'white'
   },
   row: {
     padding: "5% 10% 5%",
@@ -49,7 +50,9 @@ function ExperienceSummary({experience}) {
           className={classes.row}
         >
           <Grid item  xs={6}>
-            <img  className={classes.logos} src={experience.image} alt=""/>
+            <Paper  className={classes.logos}>
+              <img style={{width: '100%', height: '100%'}} src={experience.image} alt=""/>
+            </Paper>
           </Grid>
           <Grid item  xs={6}>
             <ExperienceText>{experience}</ExperienceText>

@@ -1,16 +1,13 @@
 import React from "react";
 
-import { Box, Grid, makeStyles, Typography } from "@material-ui/core";
+import { Box, Grid, makeStyles, Paper, Typography } from "@material-ui/core";
 import Carousel from 'react-bootstrap/Carousel'
 
-import mlagents from './ML-Agents.png';
 import lunarLander from './FlightDemo.gif';
 import soccerTwosFPV from './SoccerTwosFPV.gif';
-import codingImage from '../experience/coding.png'
 
 const useStyles = makeStyles(() => ({
   root: {
-    backgroundColor: '#141414',
     maxHeight: 500
   },
   content: {
@@ -27,7 +24,7 @@ export default function DemoCarousel(props) {
   height = Math.max(height, 100);
 
   return (
-    <div  className={classes.root}  style={{height: height}}>
+    <Paper  className={classes.root}  style={{height: height}}>
       <Carousel className='h-100'>
         <Carousel.Item>
           <Grid 
@@ -70,7 +67,7 @@ export default function DemoCarousel(props) {
           </Grid>
         </Carousel.Item>
       </Carousel>
-    </div>
+    </Paper>
   );
 }
 

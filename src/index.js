@@ -7,11 +7,13 @@ import {HashRouter as Router} from "react-router-dom";
 import { ThemeProvider } from '@material-ui/core/styles';
 import theme from './theme';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { CssBaseline } from '@material-ui/core';
 
 ReactDOM.render(
   // <React.StrictMode>
     <Router>
       <ThemeProvider  theme={theme}>
+        <CssBaseline/>
         <App />
       </ThemeProvider>
     </Router>,

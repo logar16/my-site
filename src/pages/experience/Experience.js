@@ -10,7 +10,7 @@ import AmazonExperience from './AmazonExp'
 import CgmExperience from './CgmExp'
 
 import codingImage from './coding.png';
-import { Divider, Grid, Typography } from "@material-ui/core";
+import { Divider, Grid, Paper, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -25,6 +25,10 @@ const useStyles = makeStyles((theme) => ({
     margin: "auto",
   },
   logo: {
+    maxWidth: "100%",
+    backgroundColor: 'white'
+  },
+  logoImg: {
     maxWidth: "100%",
   },
   body: {
@@ -78,7 +82,9 @@ export function Experience(props) {
         className={classes.experience}
       >
         <Grid container  justify='center'>
-          <img  className={classes.logo}  src={props.image} alt=""/>
+          <Paper  className={classes.logo}>
+            <img  className={classes.logoImg}  src={props.image} alt=""/>  
+          </Paper>
         </Grid>
 
         <Grid 

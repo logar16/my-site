@@ -2,6 +2,7 @@ import { createMuiTheme } from '@material-ui/core/styles';
 
 const theme = createMuiTheme({
   palette: {
+    type: 'dark',
     primary: {
       light: '#6ec6ff',
       main: '#2196f3',
@@ -14,6 +15,9 @@ const theme = createMuiTheme({
       dark: '#00b248',
       contrastText: '#000',
     },
+    background: {
+      default: '#212121'
+    }
   },
   typography: {
     fontFamily: ['Verdana', '"Consolas"', 'Courier New'].join(',')
