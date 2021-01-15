@@ -56,7 +56,7 @@ export default function DemoCarousel(props) {
           >
             <Grid item>
               <img
-                id='soccerTwos-img'
+                id='mlagents-img'
                 src={soccerTwosFPV}
                 alt="First-person view of the agents"
               />
