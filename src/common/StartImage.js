@@ -35,7 +35,7 @@ export default function StartImage(props) {
           </Grid>
           
           <Grid container alignItems='flex-end'  justify='flex-end'>
-            <Fab  onClick={clickHandler}  style={{ margin: 30 }}>
+            <Fab  onClick={clickHandler}  style={{ margin: 30 }}  component='div'>
               <KeyboardArrowDown></KeyboardArrowDown>
             </Fab>
           </Grid>

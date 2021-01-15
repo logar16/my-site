@@ -35,7 +35,6 @@ export default function ExperienceSwitcher(props) {
   //   setValue(index);
   //   props.onChange();
   // }
-
   const style = { fontSize: 20 };
 
   return (
@@ -47,12 +46,11 @@ export default function ExperienceSwitcher(props) {
             onChange={handleChange}
             indicatorColor="primary"
             textColor="primary"
-            style={{backgroundColor: 'primary'}}
           >
-            <Tab  label='Georgia Tech' style={style} />
-            <Tab  label='SUU'     style={style} />
-            <Tab  label='Amazon'  style={style} />
-            <Tab  label='CGM'     style={style} />
+            <Tab  label='Georgia Tech' style={style}  component='div' />
+            <Tab  label='SUU'     style={style} component='div'/>
+            <Tab  label='Amazon'  style={style} component='div'/>
+            <Tab  label='CGM'     style={style} component='div'/>
           </Tabs>
         </AppBar>
         <DynamicDisplay value={locations[value]}>{props.children}</DynamicDisplay>

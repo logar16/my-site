@@ -2,8 +2,8 @@ import React, {useState} from "react";
 import {
   Switch,
   Route,
+  NavLink,
   useLocation,
-  useHistory
 } from "react-router-dom";
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
@@ -15,10 +15,12 @@ import Projects from './pages/projects/Projects';
 import About from './pages/about/About';
 
 export default function App() {
+  
   return (
     <div>
       <NavBar/>
-      <Switch>
+
+      <Switch id='route-switch'>
         <Route path={["/experience/:id", "/experience"]}>
           <Experience />
         </Route>
@@ -49,33 +51,42 @@ function NavBar() {
   let index = Math.max(0, locations.indexOf(path));
   const [value, setValue] = useState(index);
 
-  const history = useHistory();
-
   const handleChange = (event, newValue) => {
     setValue(newValue);
     window.scrollTo({top: 0});
-    if (newValue != value) {
-      if (newValue > 0)
-        history.push(`/${locations[newValue]}`);
-      else
-        history.push(`${locations[newValue]}`);
-    }
   }
-  console.log(`path: ${path}, index: ${index}, value: ${value}`);
+  // console.log(`path: ${path}, index: ${index}, value: ${value}`);
 
   if (index !== value) {
     setValue(index)
   }
 
-  const style = { fontSize: 24 };
   return (
     <AppBar position="sticky">
       <Tabs value={value} onChange={handleChange}>
-        <Tab  label='Home'        style={style}/>
-        <Tab  label='Experience'  style={style}/>
-        <Tab  label='Projects'    style={style}/>
-        <Tab  label='About'       style={style}/>
+        <LinkTab  label='Home' link={''} />
+        <LinkTab  label='Experience'  link={'/experience'} />
+        <LinkTab  label='Projects'    link={'/projects'} />
+        <LinkTab  label='About'       link={'/about'} />
       </Tabs>
     </AppBar>
   )
+}
+
+function LinkTab({label, link}) {
+  const tabStyle = { fontSize: 24 };
+  const linkStyle = {
+    color: "white"
+  };
+
+  return (
+    <Tab  
+      label={label}
+      to={link} 
+      style={tabStyle} 
+      component={NavLink} 
+      activeStyle={linkStyle}  
+      isActive={() => true}
+    />
+  );
 }
