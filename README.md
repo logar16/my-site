@@ -9,10 +9,9 @@ Not only do I have a master's degree in Artificial Intelligence and Machine Lear
 - [ ] Dark Theme
   - [ ] Allow toggling by viewer
 - [ ] Home Page
-  - [x] Some indication that viewer should scroll down to see content
-  - [x] More links in the overview
-  - [ ] Better support for mobile (stop overlapping of grid components!)
+  - [ ] Mention projects or about?
 - [ ] Experience Page
   - [ ] Add a filter for specific types of experience the reader is interested in
 - [ ] Projects Page
+  - [ ] Show more specific skills learned or demonstrated
 - [ ] About Page
