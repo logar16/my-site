@@ -14,8 +14,8 @@ const useStyles = makeStyles(() => ({
   },
   item: {
     width: '100%',
-    padding: 50,
-    margin: '20 0'
+    padding: '0 30px',
+    marginTop: 50
   },
   paper: {
     width: '100%',
