@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Box, Grid, makeStyles, Paper, Typography } from "@material-ui/core";
+import { Grid, makeStyles, Paper, Typography } from "@material-ui/core";
 import Carousel from 'react-bootstrap/Carousel'
 
 import lunarLander from './FlightDemo.gif';
@@ -8,7 +8,8 @@ import soccerTwosFPV from './SoccerTwosFPV.gif';
 
 const useStyles = makeStyles(() => ({
   root: {
-    maxHeight: 500
+    maxHeight: 500,
+    backgroundColor: '#2a2a2a'
   },
   content: {
     marginTop: 30,
@@ -25,7 +26,7 @@ export default function DemoCarousel(props) {
 
   return (
     <Paper  className={classes.root}  style={{height: height}}>
-      <Carousel className='h-100'>
+      <Carousel id='carousel' className='h-100' onClick={props.onClick}>
         <Carousel.Item>
           <Grid 
             container 
@@ -39,14 +40,12 @@ export default function DemoCarousel(props) {
             </Grid>
             <Grid item>
               <img
+                id='lunarLander-img'
                 src={lunarLander}
                 alt="After 15,000 training episodes"
               />
             </Grid>
           </Grid>
-          {/* <Carousel.Caption>
-            <Typography variant='h3' color='textPrimary'>Lunar Lander</Typography>
-          </Carousel.Caption> */}
         </Carousel.Item>
         <Carousel.Item>
           <Grid 
@@ -57,8 +56,9 @@ export default function DemoCarousel(props) {
           >
             <Grid item>
               <img
+                id='soccerTwos-img'
                 src={soccerTwosFPV}
-                alt="After 15,000 training episodes"
+                alt="First-person view of the agents"
               />
             </Grid>
             <Grid item>
@@ -70,9 +70,3 @@ export default function DemoCarousel(props) {
     </Paper>
   );
 }
-
-{/* <Typography variant='body2'>
-  <i>
-    Photo courtesy of <a href='https://github.com/Unity-Technologies/ml-agents/'>Unity ML-Agents Toolkit GitHub repository</a>
-  </i>
-</Typography> */}
