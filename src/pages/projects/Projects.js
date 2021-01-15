@@ -66,8 +66,8 @@ const handleClick = (event) => {
   if (!id) return;
   id = id.replace('-img', '');
   let element = document.getElementById(id);
-  if (element)
-    element.scrollIntoView();
+  if (!element) return;
+  window.scroll(0, element.offsetTop - 50);
 }
 
 
@@ -82,9 +82,9 @@ function ProjectList({children}) {
       alignItems='center'
     >
       {
-        children.map((item) => {
+        children.map((item, i) => {
           return (
-            <Grid item  className={classes.item}>
+            <Grid item  className={classes.item}  key={i}>
               {item}
             </Grid>
           );
@@ -99,7 +99,7 @@ export function Entry({id, title, image, children}) {
   const classes = useStyles();
 
   return (
-    <Paper  id={id}  className={classes.paper}>
+    <Paper  id={id} className={classes.paper}>
       <Grid 
         container 
         className={classes.list}
