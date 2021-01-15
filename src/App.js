@@ -2,8 +2,8 @@ import React, {useState} from "react";
 import {
   Switch,
   Route,
-  Link,
-  useLocation
+  useLocation,
+  useHistory
 } from "react-router-dom";
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
@@ -49,24 +49,32 @@ function NavBar() {
   let index = Math.max(0, locations.indexOf(path));
   const [value, setValue] = useState(index);
 
+  const history = useHistory();
+
   const handleChange = (event, newValue) => {
     setValue(newValue);
     window.scrollTo({top: 0});
+    if (newValue != value) {
+      if (newValue > 0)
+        history.push(`/${locations[newValue]}`);
+      else
+        history.push(`${locations[newValue]}`);
+    }
   }
+  console.log(`path: ${path}, index: ${index}, value: ${value}`);
 
   if (index !== value) {
     setValue(index)
   }
-  // console.log(`path: ${path}, index: ${index}, value: ${value}`);
 
   const style = { fontSize: 24 };
   return (
     <AppBar position="sticky">
       <Tabs value={value} onChange={handleChange}>
-        <Tab  label='Home'        to=""  component={Link} style={style}/>
-        <Tab  label='Experience'  to="/experience"  component={Link} style={style}/>
-        <Tab  label='Projects'    to="/projects"  component={Link} style={style}/>
-        <Tab  label='About'       to="/about" component={Link} style={style}/>
+        <Tab  label='Home'        style={style}/>
+        <Tab  label='Experience'  style={style}/>
+        <Tab  label='Projects'    style={style}/>
+        <Tab  label='About'       style={style}/>
       </Tabs>
     </AppBar>
   )
