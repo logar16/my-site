@@ -31,7 +31,12 @@ export default function Home() {
   return (
     <div className={classes.root}>
       <div>
-        <StartImage onClick={clickHandler} bgImage={portrait}/>
+        <StartImage 
+          onClick={clickHandler} 
+          bgImage={portrait} 
+          strength={400}
+          left={<Intro/>}  
+        />
       </div>
       <div  ref={startRef}></div>
       <div>
@@ -69,9 +74,21 @@ export default function Home() {
   );
 }
 
+function Intro() {
+  return (
+    <Grid container justify='center' alignItems='flex-end' style={{height: '100%'}}>
+      <Typography className='rotated' variant='h4'>
+        Hello!
+        <br></br>
+        I am Logan Jones
+      </Typography>
+    </Grid>
+  );
+}
 
 
-const elevatorPitch = `Hello! My name is Logan Jones. I'm a self-taught programmer with a Master’s degree in 
+
+const elevatorPitch = `My name is Logan Jones. I'm a self-taught programmer with a Master’s degree in 
 Artificial Intelligence and Machine Learning and over four years of 
 work experience as a Software Engineer. 
 I'm trying to break into a new role as a ML researcher and engineer.  I love
