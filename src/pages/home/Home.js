@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Typography, Divider } from "@material-ui/core";
+import { Grid, Typography, Divider, Link } from "@material-ui/core";
 
 import StartImage from '../../common/StartImage'
 import Contact from '../../common/Contact'
@@ -62,7 +62,7 @@ export default function Home() {
 
         <Grid container justify="center">
           <Grid item>
-            <Typography className={classes.longText} variant="body1">{invite}</Typography>
+            <Invitation className={classes.longText}/>
           </Grid>
         </Grid>
 
@@ -94,7 +94,18 @@ work experience as a Software Engineer.
 I'm trying to break into a new role as a ML researcher and engineer.  I love
 Reinforcement Learning and making AI agents that can make decisions on their own.`
 
-const invite = `Check out the other sections of the site to learn more about my education, experience,
-ongoing projects, and general information about me and how I got here.
-You can also find ways to contact me below. I'm always happy to connect! 
-Note that I am looking for remote positions at this time if possible.`
+
+function Invitation(props) {
+  return (
+    <Typography className={props.className}>
+      Check out the other sections of the site to learn more about my <Link href='/#/experience/gatech'>education</Link>
+      , <Link href='/#/experience/amazon'>work experience</Link>
+      , <Link href='/#/projects'>ongoing projects</Link>, 
+      and <Link href='/#/about'>general information</Link> about me and how I got here.
+      You can also find ways to contact me below. I'm always happy to connect! 
+      I am looking for remote positions at this time.  If you or someone you know wants to hire someone like me, please let me know!  
+      <br></br>
+      Cheers!
+    </Typography>
+  );  
+}

@@ -16,7 +16,13 @@ const theme = createMuiTheme({
   },
   typography: {
     fontFamily: ['Verdana', '"Consolas"', 'Courier New'].join(',')
-    },
+  },
+  props: {
+    MuiLink: {
+      color: 'secondary',
+      underline: 'none'
+    }
+  }
 })
 
 export default theme;

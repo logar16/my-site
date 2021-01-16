@@ -29,7 +29,7 @@ function Description() {
       <br></br>
       <br></br>
       First is creating an environment similar to (but more complicated than) the Food Collection environment.
-      The repository can be found here: <Link color='secondary' href='https://github.com/logar16/ScavengerWorldUnity' target='_blank' rel="noreferrer">https://github.com/logar16/ScavengerWorldUnity</Link>.
+      The repository can be found here: <Link href='https://github.com/logar16/ScavengerWorldUnity' target='_blank' rel="noreferrer">https://github.com/logar16/ScavengerWorldUnity</Link>.
       I envision it having several teams of simple units that must work cooperatively to explore and exploit the environment.
       I am inspired by biology and the emergence of complex behaviors in colonial animals (e.g. ants and bees) due to very simple rules which synergistically combine.
       I hope to elicit similar organic emergence using deep learning and an environment which encourages cooperation <i>and</i> competition instead of only one or the other.
