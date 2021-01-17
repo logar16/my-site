@@ -7,9 +7,7 @@ const theme = createMuiTheme({
     primary: {
       main: blue[500]
     },
-    secondary: {
-      main: teal['A400']
-    },
+    secondary: teal,
     background: {
       default: '#212121'
     }
@@ -20,7 +18,15 @@ const theme = createMuiTheme({
   props: {
     MuiLink: {
       color: 'secondary',
-      underline: 'none'
+    }
+  },
+  overrides: {
+    MuiLink: {
+      underlineHover: {
+        '&:hover': {
+          color: blue[500],
+        },
+      }
     }
   }
 })
