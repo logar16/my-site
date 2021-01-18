@@ -1,13 +1,14 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 import {blue, teal} from '@material-ui/core/colors';
 
+const primary = blue;
+const secondary = teal;
+
 const theme = createMuiTheme({
   palette: {
     type: 'dark',
-    primary: {
-      main: blue[500]
-    },
-    secondary: teal,
+    primary: primary,
+    secondary: secondary,
     background: {
       default: '#212121'
     }
@@ -24,7 +25,7 @@ const theme = createMuiTheme({
     MuiLink: {
       underlineHover: {
         '&:hover': {
-          color: blue[500],
+          color: primary[500],
         },
       }
     }

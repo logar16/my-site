@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Grid, Typography } from "@material-ui/core";
+import { Grid, Typography, Link } from "@material-ui/core";
 
 import {Experience, Section} from "./Experience"
 
@@ -55,7 +55,7 @@ function AmazonDetails() {
         Our services tracked inventory availability and fulfillment capabilities for Third-party sellers, a significant portion of Amazon's income.
         I worked with experienced engineers to safely make changes (some small, some significant) to the services without loss of availability or increased latencies.
         After a year of working there, I came to realize that working in the backend maintaining an established service was not for me.  
-        I was going into my last semester of my <a href='#/experience/gatech?switch=true'>Master's in CS and Machine Learning</a>, and so I left Amazon to focus on finishing my degree and finding the right company for me.
+        I was going into my last semester of my <Link href='#/experience/gatech?switch=true'>Master's in CS and Machine Learning</Link>, and so I left Amazon to focus on finishing my degree and finding the right company for me.
       </Section>
       <Section  title='Increasing Service Responsibilities'>
         One of our services was chosen to consolidate an older, Tier 1 (critical), service's responsibilities.  

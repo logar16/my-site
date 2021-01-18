@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Grid, Typography } from "@material-ui/core";
+import { Grid, Typography, Link } from "@material-ui/core";
 
 import {Experience, Section} from "./Experience"
 
@@ -54,11 +54,11 @@ function CgmDetails() {
         {/* </p> */}
         <p>
           Ultimately, I left because I wanted to have a bigger positive impact on humanity, and I felt that I had maxed-out on what I could learn at CGM.  
-          It was a good starting place, but I had places to go, and people to help, so I took <a  href='#/experience/amazon?switch=true'>a job with Amazon</a>.
+          It was a good starting place, but I had places to go, and people to help, so I took <Link href='#/experience/amazon?switch=true'>a job with Amazon</Link>.
         </p>
       </Section>
       <Section  title='LTMS and ETG'>
-          I was a major contributor to the design and development of the original Live Table Management System (LTMS) and Electronic Table Games (ETG) servers (see <a href='https://casinogamemaker.com/etg/' target='_blank' rel='noreferrer'>casinogamemaker.com/etg</a>).
+          I was a major contributor to the design and development of the original Live Table Management System (LTMS) and Electronic Table Games (ETG) servers (see <Link href='https://casinogamemaker.com/etg/' target='_blank' rel='noreferrer'>casinogamemaker.com/etg</Link>).
           For part of the project, I led a team of two other engineers which produced all functionality of the system except for that of game displays.
           Along with a significant portion of the server, I designed and developed the dealer terminals which took dealer input and scanned cards etc. and sent the data to the server for distribution to player terminals.
         <p>

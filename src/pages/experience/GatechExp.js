@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
 
-import { Grid, Typography } from "@material-ui/core";
+import { Grid, Link, Typography } from "@material-ui/core";
 
 import {Experience, Section} from "./Experience"
 
@@ -97,7 +97,7 @@ function GatechDetails() {
         Through this, I gained greater appreciation for the difficulties of deep learning as well as became aware of many more interesting applications of the technology.
         This class exposed me to <b>PyTorch</b>, a neural network library that I now greatly enjoy.
         Along with lectures from a quality professor, I received instruction from ML researchers at Facebook applying DL in the real world.
-        For <a  href="https://github.gatech.edu/ljones91/cs7643-project" target="_blank" rel='noreferrer'>the final project</a>, 
+        For <Link href="https://github.gatech.edu/ljones91/cs7643-project" target="_blank" rel='noreferrer'>the final project</Link>, 
         I worked with a team to train and analyze multi-agent Reinforcement Learning models trained with limited observations and the addition of memory.
         This was done using the Unity ML-Agents Soccer-Twos environment and the ML-Agents training code (with some modifications).
       </Section>
@@ -110,7 +110,7 @@ function GatechDetails() {
       <Section title='Reinforcement Learning' id='RL'>
         Perhaps my favorite course at Georgia Tech, I learned about the Bellman Equation, Value and Policy Iteration, Q-Learning, Deep Q-Networks (DQN), and Game Theory (for multi-agent environments).
         The most interesting project was replicating the DQN algorithm initially proposed by DeepMind to solve the OpenAI "Lunar Lander" environment.
-        At the time, I did the project with Keras, but later (after the Deep Learning class), I converted it to use <b>PyTorch</b> (see <a href='#/projects'>Projects</a>).
+        At the time, I did the project with Keras, but later (after the Deep Learning class), I converted it to use <b>PyTorch</b> (see <Link href='#/projects'>Projects</Link>).
         The project forced me to really dive into RL with neural networks as state approximators, which I have embraced wholeheartedly.
         I also learned how to create an efficient setup for testing and evaluation so that exploration of models and hyperparameters can be done quickly and efficiently.
       </Section>
