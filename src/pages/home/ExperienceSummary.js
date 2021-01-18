@@ -12,7 +12,7 @@ const useStyles = makeStyles({
   logos: {
     maxWidth: 400,
     maxHeight: 300,
-    backgroundColor: 'white'
+    backgroundColor: '#eeeeee'
   },
   row: {
     padding: "5% 10% 5%",

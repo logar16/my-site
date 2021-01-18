@@ -18,6 +18,10 @@ const useStyles = makeStyles({
   longText: {
     maxWidth: 800,
   },
+  experiences: {
+    maxWidth: 1200,
+    margin: 'auto'
+  }
 });
 
 export default function Home() {
@@ -50,13 +54,7 @@ export default function Home() {
 
         <Divider  className={classes.divider} variant='middle'></Divider>
 
-        <Typography variant="h3">Education</Typography>
-        <EducationExperience/>
-
-        <Divider  className={classes.divider} variant='middle'></Divider>
-
-        <Typography variant="h3">Work Experience</Typography>
-        <WorkExperience/>
+        <Experiences/>
 
         <Divider  className={classes.divider} variant='middle'></Divider>
 
@@ -86,6 +84,21 @@ function Intro() {
   );
 }
 
+
+function Experiences() {
+  const classes = useStyles();
+  return (
+    <div  className={classes.experiences}>
+      <Typography variant="h3">Education</Typography>
+      <EducationExperience/>
+
+      <Divider  className={classes.divider} variant='middle'></Divider>
+
+      <Typography variant="h3">Work Experience</Typography>
+      <WorkExperience/>
+    </div>
+  );
+}
 
 
 const elevatorPitch = `My name is Logan Jones. I'm a self-taught programmer with a Master’s degree in 

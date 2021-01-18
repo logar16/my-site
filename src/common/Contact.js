@@ -12,7 +12,7 @@ export default function Contact() {
   const [open, setOpen] = React.useState(false);
 
   const phone = "(435) 668-2254";
-  const email = "loganbjones16@gmail.com";
+  const email = "logan.b.jones16@gmail.com";
 
   const phoneHandler = () => {
     navigator.clipboard.writeText(phone);
