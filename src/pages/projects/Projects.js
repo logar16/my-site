@@ -40,6 +40,8 @@ const useStyles = makeStyles(() => ({
 export default function Projects() {
   const classes = useStyles();
 
+  window.scrollTo({top: 0});
+
   return (
     <div>
       <div>

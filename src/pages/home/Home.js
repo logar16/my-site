@@ -111,8 +111,8 @@ Reinforcement Learning and making AI agents that can make decisions on their own
 function Invitation(props) {
   return (
     <Typography className={props.className}>
-      Check out the other sections of the site to learn more about my <Link href='/#/experience/gatech'>education</Link>
-      , <Link href='/#/experience/amazon'>work experience</Link>
+      Check out the other sections of the site to learn more about my <Link href='/#/experience/gatech?switch=true'>education</Link>
+      , <Link href='/#/experience/amazon?switch=true'>work experience</Link>
       , <Link href='/#/projects'>ongoing projects</Link>, 
       and <Link href='/#/about'>general information</Link> about me and how I got here.
       You can also find ways to contact me below. I'm always happy to connect! 

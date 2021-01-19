@@ -46,6 +46,8 @@ const useStyles = makeStyles({
 export default function About() {
   const classes = useStyles();
 
+  window.scrollTo({top: 0});
+
   const clickHandler = () => {
     let element = document.getElementById('start');
     window.scroll(0, element.offsetTop - 50);
