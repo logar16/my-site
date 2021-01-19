@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/my-site/static/css/main.9169989f.chunk.css",
-    "main.js": "/my-site/static/js/main.0c962b19.chunk.js",
-    "main.js.map": "/my-site/static/js/main.0c962b19.chunk.js.map",
+    "main.js": "/my-site/static/js/main.2c6737a3.chunk.js",
+    "main.js.map": "/my-site/static/js/main.2c6737a3.chunk.js.map",
     "runtime-main.js": "/my-site/static/js/runtime-main.c122b5cc.js",
     "runtime-main.js.map": "/my-site/static/js/runtime-main.c122b5cc.js.map",
     "static/css/2.20aa2d7b.chunk.css": "/my-site/static/css/2.20aa2d7b.chunk.css",
@@ -22,6 +22,7 @@
     "static/media/Pathway.a24de073.jpg": "/my-site/static/media/Pathway.a24de073.jpg",
     "static/media/SlidingLander.8f9db4d5.gif": "/my-site/static/media/SlidingLander.8f9db4d5.gif",
     "static/media/SoccerTwosFPV.d96dead3.gif": "/my-site/static/media/SoccerTwosFPV.d96dead3.gif",
+    "static/media/WIP.c39880ea.png": "/my-site/static/media/WIP.c39880ea.png",
     "static/media/amazon.524b5e5c.png": "/my-site/static/media/amazon.524b5e5c.png",
     "static/media/cgm.04180620.png": "/my-site/static/media/cgm.04180620.png",
     "static/media/coding.57266589.png": "/my-site/static/media/coding.57266589.png",
@@ -34,6 +35,6 @@
     "static/css/2.20aa2d7b.chunk.css",
     "static/js/2.990d56ab.chunk.js",
     "static/css/main.9169989f.chunk.css",
-    "static/js/main.0c962b19.chunk.js"
+    "static/js/main.2c6737a3.chunk.js"
   ]
 }
