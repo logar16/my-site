@@ -52,7 +52,7 @@ function GatechSummary() {
       <ul className={classes.lists}>
         <li>Degree specialization in Artificial Intelligence and Machine Learning</li>
         <li>Completed challenging assignments by leveraging skills in Python and powerful libraries such as NumPy, SciPy, pandas, and the neural network libraries Keras and PyTorch</li>
-        <li>Built AI/ML agents that solved problems using modern AI/ML techniques such as as (bolded were built from scratch, others were using open-source implementations):
+        <li>Built AI/ML agents that solved problems using modern AI/ML techniques such as (bolded were built from scratch, others were using open-source implementations):
           <ul>
             <li><i>Reinforcement Learning</i>: <b>Value/Policy Iteration, Q-Learning, Deep Q-Networks</b>, multi-agent training in zero-sum environments</li>
             <li><i>Supervised Learning</i>: <b>Deep Convolutional Neural Nets</b> (several visual tasks from classification to style transfer), <b>Decision Trees and Random Forests</b>, K-Nearest Neighbors, Support Vector Machines, as well as Bagging and Boosting
@@ -86,20 +86,21 @@ function GatechDetails() {
     <Grid container>
       <Section>
         This degree was an awesome opportunity to learn new things and stretch myself. 
-        I worked full-time while working on this degree part-time, and it was not easy.
+        I worked full-time while working on this degree part-time, and it was not easy.  Nevertheless, I learned how to pace myself, stay organized, and relentlessly prioritize as a result.  
+        I also learned I can do hard things.
         It changed my mind about several things related to technology and inspired me as to what I want out of a career.
         Below are some specific skills I learned, organized by course.
       </Section>
       <Section  title='Deep Learning' id='DL'>
-        In this class, I learned about automatic differentiation, the nuances of gradient descent (e.g. vanishing gradients),
+        In this class, I learned about automatic differentiation, the nuances of gradient descent (e.g., vanishing gradients),
         and modern applications of deep neural networks in supervised, unsupervised and reinforcement learning domains.
         I hand-crafted my own forward and backward passes for linear and convolutional layers (and their loss functions).
         Through this, I gained greater appreciation for the difficulties of deep learning as well as became aware of many more interesting applications of the technology.
         This class exposed me to <b>PyTorch</b>, a neural network library that I now greatly enjoy.
         Along with lectures from a quality professor, I received instruction from ML researchers at Facebook applying DL in the real world.
         For <Link href="https://github.gatech.edu/ljones91/cs7643-project" target="_blank" rel='noreferrer'>the final project</Link>, 
-        I worked with a team to train and analyze multi-agent Reinforcement Learning models trained with limited observations and the addition of memory.
-        This was done using the Unity ML-Agents Soccer-Twos environment and the ML-Agents training code (with some modifications).
+        I worked with a team to train and analyze Reinforcement Learning models in a multi-agent environment trained with limited observations and the addition of memory.
+        This was done using the Unity ML-Agents Soccer-Twos environment and the ML-Agents training code (with some modifications).  More details can be found in the <Link href='/#/projects?to=mlagents'>Projects page</Link>.
       </Section>
       <Section  title='Machine Learning'  id='ML'>
         This course included a broad survey of Machine Learning techniques.  I covered traditional classification methods such as decision trees or k-means.
@@ -108,11 +109,11 @@ function GatechDetails() {
         I used the <b>SciPy</b> and <b>NumPy</b> libraries extensively.
       </Section>
       <Section title='Reinforcement Learning' id='RL'>
-        Perhaps my favorite course at Georgia Tech, I learned about the Bellman Equation, Value and Policy Iteration, Q-Learning, Deep Q-Networks (DQN), and Game Theory (for multi-agent environments).
+        Perhaps my favorite course at Georgia Tech! I learned about the Bellman Equation, Value and Policy Iteration, Q-Learning, Deep Q-Networks (DQN), and Game Theory (for multi-agent environments).
         The most interesting project was replicating the DQN algorithm initially proposed by DeepMind to solve the OpenAI "Lunar Lander" environment.
-        At the time, I did the project with Keras, but later (after the Deep Learning class), I converted it to use <b>PyTorch</b> (see <Link href='#/projects'>Projects</Link>).
-        The project forced me to really dive into RL with neural networks as state approximators, which I have embraced wholeheartedly.
-        I also learned how to create an efficient setup for testing and evaluation so that exploration of models and hyperparameters can be done quickly and efficiently.
+        At the time, I did the project with Keras, but later (after the Deep Learning class), I converted it to use <b>PyTorch</b> (see <Link href='/#/projects?to=lunarLander'>Projects</Link>).
+        The project forced me to really dive into RL with neural networks as state approximators, which I have now embraced wholeheartedly.
+        I also learned how to create an efficient setup for testing and evaluation so that exploration of models and hyperparameters could be done quickly and efficiently.
       </Section>
       <Section  title="Other Courses" id="other">
         Some other courses of interest that I took were:
@@ -128,7 +129,7 @@ function GatechDetails() {
             <ul>
               <li>Learned how to use NumPy and vectorization to efficiently work with large arrays of data</li>
               <li>Built a minimax algorithm that could win in the game of Isolation more than half the time against the assignment's difficult test bot</li>
-              <li>Implemented a uni/bi/tri-directional A* algorithm to find shortest distance between two or three points of a graph</li>
+              <li>Implemented a uni-, bi-, and tri-directional A* algorithm to find shortest distance between two or three points of a graph</li>
               <li>Introduced to concepts like Bayesian inference and bagging and boosting</li>
             </ul>
           </li>
@@ -143,9 +144,10 @@ function GatechDetails() {
               <li>Built a pretty decent React Web app with no prior experience and in less than 50 hours
                 <ul>
                   <li>App included multiple pages/views, data display dashboards, and interactions with a database</li>
+                  <li>This experience gave me the confidence to build this React website which you now behold! Not too shabby, eh?</li>
                 </ul>
               </li>
-              <li>Learned about FHIR and other healthcare related standards and formats</li>
+              <li>Learned about <b>FHIR</b> and other healthcare-related standards and formats</li>
             </ul>
           </li>
           <li>Software Engineering and Software Architecture

@@ -198,30 +198,31 @@ function StoryDescription() {
       My path to where I am now was a bit circuitous.  
       I studied Biology and Chemistry for my undergrad, and I enjoyed learning about the sciences, but I had absolutely no idea what job I wanted in the field, since I detested the lab work for my classes—the day to day a scientist would expect to do.
       I had not considered a degree in CS because I had the incorrect assumption that only people who hated sunlight and friends and grew up on the command line would enjoy studying CS.
-      I liked computers, but I didn't understand them, and I wasn't certain if I could.
+      I liked computers, but I didn't understand them at the lowest level, and I wasn't certain if I could.
       <br></br>
       <br></br>
       One summer, between semesters, I decided to look up a free online CS course (hosted by MIT) on an inspired whim.
-      It introduced me to Python and the amazing world of computer programming.  I immediately fell in love, with my first program being a Magic 8-ball that would randomly pick responses to entered text.  My next project was a text-based game similar to rock paper scissors.
+      It introduced me to Python and the amazing world of computer programming.  I immediately fell in love! 
+      My first program was a Magic 8-ball that would randomly pick responses to entered text.  My next project was a text-based game similar to rock paper scissors.  My applications only increased in size and complexity from there.
       I was captivated by the power of programming.  I could use logic to force the computer to do what I want.  And once I could express how to do it once, I just needed to put it in a loop and I could do it 10, 100, or 1,000,000 times with the modification of a single variable.
       New worlds opened up to me!
       <br></br>
       <br></br>
       However, I was almost done with my Biology degree, and switching to CS would put me back several years.  I shelved programming to finish my studies.
       But I decided to take an elective CS class, and the draw of programming pulled me in again.  
-      I excelled, completing projects far outstripping my classmates who only were in the class because they enjoyed playing video games etc.
-      I was passionate, I loved programming and the power it gave me.
+      I excelled, completing projects far outstripping my classmates who only were in the class because they enjoyed playing video games etc..
+      I was passionate, I loved programming and the power it gave me to create things and effect change effortlessly.
       I built some games on my own, one copying the board game Dominion and one copying the old arcade game Asteroids.  
-      Talking to a friend about these and my love of programming landed me an internship and later my first engineering job at <Link href='/#/experience/cgm?switch=true'>Casino Game Maker</Link>.
+      Talking to a friend about these and my love of programming helped me connect with the right people and land an internship and my first engineering job at <Link href='/#/experience/cgm?switch=true'>Casino Game Maker</Link>.
       <br></br>
       <br></br>
-      From there I gained the skills and confidence to apply to the <Link href='/#/experience/gatech?switch=true'>Georgia Tech OMSCS master's program</Link>.  I wanted the degree to show others that I know what I'm doing, and to make sure that I did actually know for myself.
+      From there I gained the skills and confidence to apply to the <Link href='/#/experience/gatech?switch=true'>Georgia Tech OMSCS Master's program</Link>.  I wanted the degree to show others that I know what I'm doing, and to make sure that I did actually know for myself.
       I often struggle with imposter syndrome since I didn't get a CS undergrad and I haven't built a compiler etc. etc..  
-      However, I am a quick learner and I love solving problems, two skills that I think are at the heart of being successful in any CS related endeavor.
+      However, I am a quick learner and I love solving problems, two skills that I think are at the heart of being successful in any CS-related endeavor.
       <br></br>
       <br></br>
       I want to keep learning, and I want to make a difference in the world.  It is so easy to make money in this field, especially if you don't care to help raise the human race.
-      I don't need more money, I just want to make a positive difference.  I think I can, and I know I will.
+      I don't need more money, I just want to make a positive difference.  I think I can, and I know I will.  I just need to connect with the right people.  Hopefully the faithful reader will be able to help me in this regard.
     </Typography>
   );
 }
