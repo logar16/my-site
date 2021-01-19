@@ -37,7 +37,7 @@ function Summary() {
           </li>
           <li>Familiarized with the ML-Agents documentation and its nuances
             <ul>
-              <li>Improved team's use of the API and CLI to best use parallelization and reduced training by <b>75%</b></li>
+              <li>Improved team's use of the API and CLI to best use parallelization and reduced training time by <b>75%</b></li>
             </ul>
           </li>
           <li>Used Unity as an editor to build Prefabs, Scenes, and RL environments</li>
@@ -87,7 +87,7 @@ function FutureWork() {
         First is creating an environment similar to (but more complicated than) the Food Collection environment.
         The repository can be found here: <Link href='https://github.com/logar16/ScavengerWorldUnity' target='_blank' rel="noreferrer">https://github.com/logar16/ScavengerWorldUnity</Link>.
         I envision it having several teams of simple units that must work cooperatively to explore and exploit the environment.
-        I am inspired by biology and the emergence of complex behaviors in colonial animals (e.g. ants and bees) due to very simple rules which synergistically combine.
+        I am inspired by biology and the emergence of complex behaviors in colonial animals (e.g., ants and bees) due to very simple rules which synergistically combine.
         I hope to elicit similar organic emergence using deep learning and an environment which encourages cooperation <i>and</i> competition instead of only one or the other.
         I will provide methods for communication, such as leaving distinct markers, to see if the agents come up with any new and interesting communication protocols.
         It is still in the early stages, but I will be working on it as I have time.
@@ -95,7 +95,7 @@ function FutureWork() {
         <br></br>
         Secondly, I am quite intrigued by the game <i>1313 Dead End Drive</i> which involves much scheming and tough choices of when to move one's own characters or another's.
         I want to build a simplified simulator of the game which will follow the ML-Agent's API so that I can find an optimal solution to this fun but difficult game.
-        Since the game requires predicting or simulating other agent's model of the world and possible decision making process, it is of similar difficulty to the challenging game of Hanabi which was highlighted by <Link href='https://arxiv.org/abs/1902.00506' target='_blank' rel='noreferrer'>researchers at DeepMind</Link> as an important problem to solve.
+        Since the game requires predicting or simulating other agent's model of the world and possible decision-making process, it is of similar difficulty to the challenging game of Hanabi which was highlighted by <Link href='https://arxiv.org/abs/1902.00506' target='_blank' rel='noreferrer'>researchers at DeepMind</Link> as an important problem to solve.
         I think this (my proposed environment) would also serve as a useful testing environment for RL algorithms but in a competitive environment.
       </Typography>  
     </div>

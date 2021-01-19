@@ -69,7 +69,7 @@ export default function About() {
 
       <div  id='start'>
         <Typography variant='h5'>
-          Interested in learning more about me as a human being?
+          Interested in learning more about me as a human being?  Read on!
         </Typography>
       </div>
       
@@ -233,13 +233,13 @@ function FamilyDescription() {
       I am happily married to a wonderful wife, and we have two young children.  We just got a bigger car, so that's a soft commit on having a third child! 😉
       <br></br>
       <br></br>
-      My wife is a real estate agent; perhaps the most organized person I know; and one of the sweetest and kindest people on the earth.  Where I am loud and boisterous, she is quite, calm, and thoughtful.
+      My wife is a real estate agent; perhaps the most organized person I know; and one of the sweetest and kindest people on the earth.  Where I am loud and boisterous, she is quiet, calm, and thoughtful.
       <br></br>
       <br></br>
-      My son is a prodigy! He could identify all the numbers and letters by 18 months and now likes to memorize books (see <i>Giraffes Can't Dance</i> or <i>Room on the Broom</i> as examples of the types of books he likes).
+      My son is a prodigy! He could identify all the numbers (0-9) and letters by 18 months and now likes to memorize books (see <i>Giraffes Can't Dance</i> or <i>Room on the Broom</i> as examples of the types of books he likes).
       <br></br>
       <br></br>
-      My daughter is a newborn, so we will see what she becomes.  So far she loves smiling, so that's a good start!
+      My daughter is a newborn, so we will see what she becomes.  So far, she loves smiling, so that's a good start!
     </Typography>
   );
 }
@@ -281,7 +281,7 @@ function HobbiesDescription() {
             <li>Dominion (I've got five expansions for it)</li>
             <li>Splendor</li>
             <li>Citadels</li>
-            <li>Villanous</li>
+            <li>Villainous</li>
             <li>And many many more!</li>
           </ul>
           My wife and I like to invite people over to play board games as a way to make new friends.  I'm open to doing so remotely if you're interested!
@@ -290,7 +290,7 @@ function HobbiesDescription() {
           <ul>
             <li>Age of Empires and Age of Mythology (RTS)</li>
             <li>Roller Coaster Tycoon (Simulation)</li>
-            <li>Halo and Original Star Wars Battlefront (FPS)</li>
+            <li>Halo and <i>Original</i> Star Wars Battlefront (FPS)</li>
             <li>Geometry Wars (Multi-directional shooter)</li>
             <li>Portals (Puzzle)</li>
           </ul>
@@ -321,7 +321,7 @@ function InterestsDescription() {
         <li>Music
           <ul>
             <li>I enjoy music theory and the mathematical logic behind what sounds good.</li>
-            <li>I play guitar, trumpet, and a little piano, but it's been awhile 😬</li>
+            <li>I play guitar, trumpet, and a little piano, but it's been a while 😬</li>
           </ul>
         </li>
         <li>Mechanical and Electrical Engineering</li>
@@ -331,7 +331,7 @@ function InterestsDescription() {
           </ul>
         </li>
       </ul>
-      I am interested and excited about these topics and would love any excuse to combine them with Machine Learning or coding in general so I can satisfy two loves at one time!
+      I am interested and excited about these topics and would love any excuse to combine them with Machine Learning or coding in general so I can satisfy two passions at one time!
     </Typography>
   );
 }

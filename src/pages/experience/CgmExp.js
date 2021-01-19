@@ -23,10 +23,10 @@ function CgmSummary() {
     <Typography component='div'>
       <ul>
         <li>
-        	Designed and developed applications and video games under strict legal requirements for security, durability, persistence, and longevity, often as the primary developer
+        	Designed and developed applications and video games under strict legal requirements for security, durability, persistence, and longevity—often as the primary developer
         </li>
         <li>
-        	Demonstrated ability to learn and apply new skills by redesigning an inefficient database (PostgreSQL) to be over 100x faster on all major queries (after only a few days of study regarding databases)
+        	Demonstrated ability to learn and apply new skills by redesigning an inefficient database (PostgreSQL) to be over 100x faster on all major queries after only a few days of study regarding databases
         </li>
         <li>
         	Redesigned data structures and overall architecture on the company’s core server application to improve efficiency and make the system more robust and modular
@@ -35,7 +35,8 @@ function CgmSummary() {
         <li>
         	Daily use and love of the C# programming language and Microsoft Windows OS
         </li>
-        <li>Learned how to use git, network applications together, work using agile methodologies, use design patterns, develop using TDD, and many other skills</li>
+        <li>Learned how to use Git, network applications together, use design patterns, develop using TDD and in an "agile" way, and many other skills</li>
+        <li>Relentlessly prioritized to deliver the most value to both internal and external customers</li>
       </ul>
     </Typography>
   );
@@ -53,7 +54,7 @@ function CgmDetails() {
           Workflows for the team were also improved under my direction with helpful input from others.  I learned to lead by listening and working <i>with</i> those I had responsibility over.
         {/* </p> */}
         <p>
-          Ultimately, I left because I wanted to have a bigger positive impact on humanity, and I felt that I had maxed-out on what I could learn at CGM.  
+          Ultimately, I left because I wanted to have a bigger positive impact on humanity, and I felt that I had maxed-out what I could learn at CGM.  
           It was a good starting place, but I had places to go, and people to help, so I took <Link href='#/experience/amazon?switch=true'>a job with Amazon</Link>.
         </p>
       </Section>
@@ -76,11 +77,11 @@ function CgmDetails() {
       </Section>
       <Section  title='Mathematical Simulations'>
         I produced simulation programs that verified the math behind the slot reels as established by the in-house mathematician.  
-        I also built simulators for Keno and Baccarat games.  With some multi-core processing I was able to simulate 9 billion unique game states in less than 24 hours on a simple i5 processor.
+        I also built simulators for Keno and Baccarat games.  With some multi-core processing I was able to simulate 9 billion unique game states in less than 24 hours on a simple i5 processor (2016 variety).
       </Section>
       <Section  title='Creative Tools'>
-        Additionally, I volunteered my spare time to create tools that helped the artists to create particle generators faster and with advanced features not originally provided by the simple particle library we were using.
-        I also took the time to make the UI better (with input from my users) to reduce friction for the artists.
+        Additionally, I volunteered my spare time to create tools that helped the artists to create particle generators easier and faster and with advanced features not originally provided by the simple particle library we were using.
+        I also took the time to make the UI better (with input from my users) to reduce friction for the artists and maximize the new capabilities.
       </Section>
       <Section  title='Games'>
         I personally led the design and development of three of our popular games in their entirety.  I built multiple proof-of-concept games for sales demos as well as internal review.  
