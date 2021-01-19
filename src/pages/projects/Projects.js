@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Divider, Grid, Paper, Typography } from "@material-ui/core";
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -6,6 +6,7 @@ import Carousel from './DemoCarousel';
 import LunarLander from './LunarLanderProj'
 import UnityMlAgents from './UnityMLAgentsProj'
 import Contact from '../../common/Contact';
+import { useLocation } from "react-router-dom";
 
 
 const useStyles = makeStyles(() => ({
@@ -39,8 +40,18 @@ const useStyles = makeStyles(() => ({
 
 export default function Projects() {
   const classes = useStyles();
+  var query = new URLSearchParams(useLocation().search);
+  query = query.get('to');
 
-  window.scrollTo({top: 0});
+  useEffect(() => {
+    var element = document.getElementById(query);
+    if (element) {
+        window.scroll(0, element.offsetTop - 50);
+    }
+    else {
+      window.scrollTo({top: 0});
+    }
+  }, [])
 
   return (
     <div>
