@@ -7,6 +7,7 @@ import LunarLander from './LunarLanderProj'
 import UnityMlAgents from './UnityMLAgentsProj'
 import Contact from '../../common/Contact';
 import { useLocation } from "react-router-dom";
+import FutureProjs from "./FutureProj";
 
 
 const useStyles = makeStyles(() => ({
@@ -49,7 +50,7 @@ export default function Projects() {
         window.scroll(0, element.offsetTop - 50);
     }
     else {
-      window.scrollTo({top: 0});
+      // window.scrollTo({top: 0});
     }
   }, [])
 
@@ -64,6 +65,7 @@ export default function Projects() {
       <ProjectList>
         <LunarLander/>
         <UnityMlAgents/>
+        <FutureProjs/>
       </ProjectList>
 
       <div>
