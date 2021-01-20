@@ -47,6 +47,8 @@ export default function ExperiencePage() {
   const classes = useStyles();
   const startRef = React.useRef();
 
+  window.scrollTo({top: 0});
+
   const clickHandler = () => {
     window.scrollTo(0, startRef.current.offsetTop - 50);
   }

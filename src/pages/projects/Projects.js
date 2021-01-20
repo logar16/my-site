@@ -50,7 +50,7 @@ export default function Projects() {
         window.scroll(0, element.offsetTop - 50);
     }
     else {
-      // window.scrollTo({top: 0});
+      window.scrollTo({top: 0});
     }
   }, [])
 
