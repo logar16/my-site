@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Snackbar } from "@material-ui/core";
-import { List, ListItem, ListItemIcon, ListItemText } from "@material-ui/core";
+import { List, ListItem, ListItemIcon, ListItemText, Link } from "@material-ui/core";
 import Alert from '@material-ui/lab/Alert';
 import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
@@ -73,5 +73,5 @@ export default function Contact() {
 
 
 function ListItemLink(props) {
-  return <ListItem button component="a" target="_blank" {...props} />;
+  return <ListItem button component={Link} color='textPrimary' target="_blank" {...props} />;
 }
