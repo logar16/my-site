@@ -213,10 +213,10 @@ function StoryDescription() {
       I excelled, completing projects far outstripping my classmates who only were in the class because they enjoyed playing video games etc..
       I was passionate, I loved programming and the power it gave me to create things and effect change effortlessly.
       I built some games on my own, one copying the board game Dominion and one copying the old arcade game Asteroids.  
-      Talking to a friend about these and my love of programming helped me connect with the right people and land an internship and my first engineering job at <Link href='/#/experience/cgm?switch=true'>Casino Game Maker</Link>.
+      Talking to a friend about these and my love of programming helped me connect with the right people and land an internship and my first engineering job at <Link href='#/experience/cgm?switch=true'>Casino Game Maker</Link>.
       <br></br>
       <br></br>
-      From there I gained the skills and confidence to apply to the <Link href='/#/experience/gatech?switch=true'>Georgia Tech OMSCS Master's program</Link>.  I wanted the degree to show others that I know what I'm doing, and to make sure that I did actually know for myself.
+      From there I gained the skills and confidence to apply to the <Link href='#/experience/gatech?switch=true'>Georgia Tech OMSCS Master's program</Link>.  I wanted the degree to show others that I know what I'm doing, and to make sure that I did actually know for myself.
       I often struggle with imposter syndrome since I didn't get a CS undergrad and I haven't built a compiler etc. etc..  
       However, I am a quick learner and I love solving problems, two skills that I think are at the heart of being successful in any CS-related endeavor.
       <br></br>
@@ -249,7 +249,7 @@ function HobbiesDescription() {
     <Typography>
       When I get a spare moment, you'll find me doing one of the following:
       <ul>
-        <li>Coding Personal Projects (check out the <Link href='/#/projects'>Projects</Link> page for details)</li>
+        <li>Coding Personal Projects (check out the <Link href='#/projects'>Projects</Link> page for details)</li>
         <li>Reading and Writing Fiction
           <ul>
             <li>Favorite Books and Series

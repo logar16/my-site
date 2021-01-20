@@ -125,10 +125,10 @@ function Invitation(props) {
         If you or someone you know wants to hire someone like me, please let me know!  Until then,
       </Typography>
       {/* <Typography align='justify' className={props.className}>
-        Check out the other sections of the site to learn more about my <Link href='my-site/#/experience/gatech?switch=true'>education</Link>
-        , <Link href='my-site/#/experience/amazon?switch=true'>work experience</Link>
-        , <Link href='my-site/#/projects'>ongoing projects</Link>, 
-        and <Link href='my-site/#/about'>general information</Link> about me and how I got here.
+        Check out the other sections of the site to learn more about my <Link href='my-site#/experience/gatech?switch=true'>education</Link>
+        , <Link href='#/experience/amazon?switch=true'>work experience</Link>
+        , <Link href='#/projects'>ongoing projects</Link>, 
+        and <Link href='#/about'>general information</Link> about me and how I got here.
         You can also find ways to contact me below. I'm always happy to connect! 
         I am looking for remote positions at this time.  If you or someone you know wants to hire someone like me, please let me know!  
       </Typography> */}

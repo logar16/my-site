@@ -49,7 +49,7 @@ function MultimediaReader() {
         Multimedia Reader/Writer
       </Typography>
       <Typography variant='body1'>
-        My multidisciplinary <Link href='/#/experience/suu?switch=true'>Honors Thesis at SUU</Link> included drawings and music to go along with the written word.
+        My multidisciplinary <Link href='#/experience/suu?switch=true'>Honors Thesis at SUU</Link> included drawings and music to go along with the written word.
         Honestly, I wanted it to be as close to a movie as possible, but I didn't want to mess with trying to do a film.  
         However, I have since realized that there is a definite space for stories that incorporate more than just text and occasional pictures, and I want to share my such stories with others.
         Thus, I want to create a personal website which allows people to read my stories with all of the extra media included, such as songs that start playing when the text reaches a certain point and loop until another point, and so on.

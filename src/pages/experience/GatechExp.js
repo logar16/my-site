@@ -100,7 +100,7 @@ function GatechDetails() {
         Along with lectures from a quality professor, I received instruction from ML researchers at Facebook applying DL in the real world.
         For <Link href="https://github.gatech.edu/ljones91/cs7643-project" target="_blank" rel='noreferrer'>the final project</Link>, 
         I worked with a team to train and analyze Reinforcement Learning models in a multi-agent environment trained with limited observations and the addition of memory.
-        This was done using the Unity ML-Agents Soccer-Twos environment and the ML-Agents training code (with some modifications).  More details can be found in the <Link href='/#/projects?to=mlagents'>Projects page</Link>.
+        This was done using the Unity ML-Agents Soccer-Twos environment and the ML-Agents training code (with some modifications).  More details can be found in the <Link href='#/projects?to=mlagents'>Projects page</Link>.
       </Section>
       <Section  title='Machine Learning'  id='ML'>
         This course included a broad survey of Machine Learning techniques.  I covered traditional classification methods such as decision trees or k-means.
@@ -111,7 +111,7 @@ function GatechDetails() {
       <Section title='Reinforcement Learning' id='RL'>
         Perhaps my favorite course at Georgia Tech! I learned about the Bellman Equation, Value and Policy Iteration, Q-Learning, Deep Q-Networks (DQN), and Game Theory (for multi-agent environments).
         The most interesting project was replicating the DQN algorithm initially proposed by DeepMind to solve the OpenAI "Lunar Lander" environment.
-        At the time, I did the project with Keras, but later (after the Deep Learning class), I converted it to use <b>PyTorch</b> (see <Link href='/#/projects?to=lunarLander'>Projects</Link>).
+        At the time, I did the project with Keras, but later (after the Deep Learning class), I converted it to use <b>PyTorch</b> (see <Link href='#/projects?to=lunarLander'>Projects</Link>).
         The project forced me to really dive into RL with neural networks as state approximators, which I have now embraced wholeheartedly.
         I also learned how to create an efficient setup for testing and evaluation so that exploration of models and hyperparameters could be done quickly and efficiently.
       </Section>
