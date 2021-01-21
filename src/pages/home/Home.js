@@ -81,7 +81,7 @@ export default function Home() {
 
 function Intro() {
   return (
-    <Grid container justify='center' alignItems='flex-end' style={{height: '100%'}}>
+    <Grid container justify='center' alignItems='center' style={{height: '100%'}}>
       <Hidden xsDown>
         <Typography className='rotated' variant='h4'  align='center'>
           Hello!

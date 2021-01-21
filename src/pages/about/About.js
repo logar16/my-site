@@ -1,6 +1,6 @@
 import React from "react";
 import Typography from '@material-ui/core/Typography';
-import { Divider, Grid, Link, makeStyles, Paper } from "@material-ui/core";
+import { Divider, Grid, Hidden, Link, makeStyles, Paper } from "@material-ui/core";
 
 import Contact from "../../common/Contact";
 import StartImage from "../../common/StartImage";
@@ -100,10 +100,12 @@ export default function About() {
 
 function Intro() {
   return (
-    <Grid container justify='center' alignItems='flex-end' style={{height: '100%'}}>
-      <Typography className='rotated' variant='h4'>
-        Me again!  But this time, it's personal!
-      </Typography>
+    <Grid container justify='center' alignItems='center' style={{height: '100%'}}>
+      <Hidden smDown>
+        <Typography className='rotated' variant='h4'>
+          Me again!  But this time, it's personal!
+        </Typography>
+      </Hidden>
     </Grid>
   );
 }
@@ -246,7 +248,7 @@ function FamilyDescription() {
 
 function HobbiesDescription() {
   return (
-    <Typography>
+    <Typography component='div'>
       When I get a spare moment, you'll find me doing one of the following:
       <ul>
         <li>Coding Personal Projects (check out the <Link href='#/projects'>Projects</Link> page for details)</li>
@@ -310,7 +312,7 @@ function InterestsDescription() {
         <li>Astronomy, Cosmology, and Physics</li>
         <li>Religion
           <ul>
-            <li>I'm a faithful member of <Link  href='https://www.comeuntochrist.org'>The Church of Jesus Christ of Latter-day Saints</Link> and I enjoy studying the Restored Gospel almost daily</li>
+            <li>I'm a faithful member of <Link  href='https://www.comeuntochrist.org'>The Church of Jesus Christ of Latter-day Saints</Link>, and I enjoy studying the Restored Gospel almost daily</li>
           </ul>
         </li>
         <li>Psychology and Neurology

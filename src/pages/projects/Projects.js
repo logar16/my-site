@@ -52,6 +52,7 @@ export default function Projects() {
     else {
       window.scrollTo({top: 0});
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (

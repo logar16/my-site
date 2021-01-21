@@ -45,7 +45,7 @@ export default function PortalGrid() {
 
 function Item({title, link, img, children}) {
   return (
-    <Grid item  xs={8} md={6} lg={4}>
+    <Grid item  xs={8} sm={6} md={4}>
       <GridCard title={title} link={link} img={img}>
         {children}
       </GridCard>
