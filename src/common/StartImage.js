@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, Fab, makeStyles, Typography } from "@material-ui/core";
-import { Parallax } from "react-parallax";
 import KeyboardArrowDown from '@material-ui/icons/KeyboardArrowDown';
+import { Parallax } from "react-parallax";
 import {useSpring, animated} from 'react-spring'
 
 const useStyles = makeStyles(() => ({
@@ -53,8 +53,8 @@ function ScrollDown({onClick}) {
   const classes = useStyles();
 
   const fabTrans = useSpring({
-    padding: 25,
-    from: {padding: 15},
+    padding: 15,
+    from: {padding: 10},
     config: {mass: 20, friction: 0, tension: 400}
   });
   const textTrans = useSpring({
@@ -77,7 +77,7 @@ function ScrollDown({onClick}) {
         </Fab>
       </animated.div>
       <AnimatedTypography style={textTrans}>
-        <i>scroll down</i>
+        <i>(scroll down)</i>
       </AnimatedTypography>
     </Grid>
   );

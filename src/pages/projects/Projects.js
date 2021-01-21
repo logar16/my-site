@@ -5,7 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Carousel from './DemoCarousel';
 import LunarLander from './LunarLanderProj'
 import UnityMlAgents from './UnityMLAgentsProj'
-import Contact from '../../common/Contact';
+import Bottom from "../../common/Bottom";
 import { useLocation } from "react-router-dom";
 import FutureProjs from "./FutureProj";
 
@@ -32,15 +32,11 @@ const useStyles = makeStyles(() => ({
     padding: 10,
     height: '100%'
   },
-  divider: {
-    margin: 30,
-  },
 }));
 
 
 
 export default function Projects() {
-  const classes = useStyles();
   var query = new URLSearchParams(useLocation().search);
   query = query.get('to');
 
@@ -70,8 +66,7 @@ export default function Projects() {
       </ProjectList>
 
       <div>
-        <Divider  className={classes.divider}  variant='middle'/>
-        <Contact/>
+        <Bottom/>
       </div>
     </div>
   );

@@ -18,7 +18,7 @@ const useStyles = makeStyles({
     padding: "3% 3% 1%",
   },
   item: {
-    backgroundColor: '#333333'
+    backgroundColor: '#2c2c2c'
   },
   moreLink: {
     paddingBottom: 5

@@ -25,7 +25,6 @@ export default function Contact() {
 
   return (
     <div>
-
       <Grid  container  justify="center">
         <Grid item>
           <List dense>
@@ -62,6 +61,7 @@ export default function Contact() {
           </List>
         </Grid>
       </Grid>
+
       <Snackbar open={open} onClose={() => setOpen(false)} autoHideDuration={3000} >
         <Alert  severity="success">
           Copied to clipboard!

@@ -3,21 +3,18 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import ExperienceSwitcher from './Switch'
 import StartImage from '../../common/StartImage'
-import Contact from '../../common/Contact'
+import Bottom from "../../common/Bottom";
 import GatechExperience from './GatechExp'
 import SuuExperience from './SuuExp'
 import AmazonExperience from './AmazonExp'
 import CgmExperience from './CgmExp'
 
 import codingImage from './coding.png';
-import { Divider, Grid, Paper, Typography } from "@material-ui/core";
+import { Grid, Paper, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     // textAlign: "center"
-  },
-  divider: {
-    margin: 30,
   },
   experience: {
     maxWidth: "90%",
@@ -58,7 +55,7 @@ export default function ExperiencePage() {
       <div>
         <StartImage onClick={clickHandler} bgImage={codingImage}  strength={400}/>
       </div>
-      <div  ref={startRef}>
+      <div id='start' ref={startRef}>
         <ExperienceSwitcher onChange={clickHandler}>
           <GatechExperience id="gatech"/>
           <SuuExperience    id="suu"/>
@@ -66,8 +63,7 @@ export default function ExperiencePage() {
           <CgmExperience    id="cgm"/>
         </ExperienceSwitcher>
       </div>
-      <Divider  className={classes.divider}  variant='middle'/>
-      <Contact/>
+      <Bottom top='start'/>
     </div>
   );
 }

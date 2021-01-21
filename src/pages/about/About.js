@@ -2,7 +2,7 @@ import React from "react";
 import Typography from '@material-ui/core/Typography';
 import { Divider, Grid, Hidden, Link, makeStyles, Paper } from "@material-ui/core";
 
-import Contact from "../../common/Contact";
+import Bottom from "../../common/Bottom";
 import StartImage from "../../common/StartImage";
 
 import profileImage from '../home/profile.jpg';
@@ -65,9 +65,9 @@ export default function About() {
         />
       </div>
 
-      <Divider variant='middle' className={classes.divider} />
+      <Divider id='start' variant='middle' className={classes.divider} />
 
-      <div  id='start'>
+      <div>
         <Typography variant='h5'>
           Interested in learning more about me as a human being?  Read on!
         </Typography>
@@ -91,8 +91,7 @@ export default function About() {
       </AboutList>
 
       <div>
-        <Divider variant='middle' className={classes.divider} />
-        <Contact></Contact>
+        <Bottom top='start'/>
       </div>
     </div>
   );

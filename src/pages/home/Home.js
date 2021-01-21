@@ -3,7 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Grid, Typography, Divider, Hidden, Container } from "@material-ui/core";
 
 import StartImage from '../../common/StartImage';
-import Contact from '../../common/Contact';
+import Bottom from "../../common/Bottom";
+
 import {EducationExperience, WorkExperience} from './ExperienceSummary';
 import ButtonGrid from './OtherPagesPortal';
 
@@ -32,6 +33,8 @@ export default function Home() {
     startRef.current.scrollIntoView();
   }
 
+  window.scrollTo({top: 0});
+
   return (
     <div className={classes.root}>
       <div>
@@ -42,7 +45,7 @@ export default function Home() {
           left={<Intro/>}  
         />
       </div>
-      <div  ref={startRef}></div>
+      <div  ref={startRef}  id='start'></div>
       <Container>
         <Divider className={classes.divider} variant='middle'></Divider>
 
@@ -70,11 +73,9 @@ export default function Home() {
             <Invitation className={classes.longText}/>
           </Grid>
         </Grid>
-
-        <Divider  className={classes.divider} variant='middle'></Divider>
-
-        <Contact/>
       </Container>
+
+      <Bottom top='start'/>
     </div>
   );
 }
