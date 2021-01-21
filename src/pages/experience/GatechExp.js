@@ -141,10 +141,10 @@ function GatechDetails() {
           </li>
           <li>Intro to Health Informatics
             <ul>
-              <li>Built a pretty decent React Web app with no prior experience and in less than 50 hours
+              <li>Built a solid React Web app with no prior experience and in less than 50 hours
                 <ul>
                   <li>App included multiple pages/views, data display dashboards, and interactions with a database</li>
-                  <li>This experience gave me the confidence to build this React website which you now behold! Not too shabby, eh?</li>
+                  <li>This experience gave me the confidence to build this React website!</li>
                 </ul>
               </li>
               <li>Learned about <b>FHIR</b> and other healthcare-related standards and formats</li>
