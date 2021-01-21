@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
-import { Button, Container, Grid, Link, Paper, Typography } from "@material-ui/core";
+import { Button, Container, Grid, Paper, Typography } from "@material-ui/core";
 
 import gatechImage from '../experience/gatech.png'
 import suuImage from '../experience/suu.png'

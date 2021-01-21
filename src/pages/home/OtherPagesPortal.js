@@ -1,5 +1,5 @@
 
-import { Grid, Typography, makeStyles, Card, CardContent, CardActionArea, CardMedia, Box } from "@material-ui/core";
+import { Grid, Typography, makeStyles, Card, CardContent, CardActionArea, CardMedia } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
 
 import expImage from '../experience/coding.png'
@@ -61,8 +61,6 @@ function GridCard({title, link, img, children}) {
     history.push(link);
   }
 
-  console.log(img)
-
   return (
     <Card className={classes.card}>
       <CardActionArea className={classes.card}  onClick={handleClick}>
@@ -70,7 +68,7 @@ function GridCard({title, link, img, children}) {
           {/* <img src={img} className={classes.image} /> */}
         </CardMedia>
         <CardContent  className={classes.card}>
-          <Grid container direction='column' justify='start'>
+          <Grid container direction='column' justify='flex-start'>
             <Typography variant='h4'  align='center'>
               {title}
             </Typography>

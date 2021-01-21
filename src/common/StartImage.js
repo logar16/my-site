@@ -17,6 +17,7 @@ export default function StartImage(props) {
   var strength = props.strength || 500;
   var height = props.height || window.innerHeight - 100;
   height = Math.max(height, 100);
+  // console.log(`props.height: ${props.height}, window: ${window.innerHeight}, height: ${height}`)
 
   return (
     <Parallax bgImage={bgImage} strength={strength}>

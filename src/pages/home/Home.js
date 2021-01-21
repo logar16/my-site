@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Typography, Divider, Link, Hidden, Container } from "@material-ui/core";
+import { Grid, Typography, Divider, Hidden, Container } from "@material-ui/core";
 
 import StartImage from '../../common/StartImage';
 import Contact from '../../common/Contact';
