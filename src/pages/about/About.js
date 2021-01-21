@@ -234,10 +234,13 @@ function FamilyDescription() {
       I am happily married to a wonderful wife, and we have two young children.  We just got a bigger car, so that's a soft commit on having a third child! 😉
       <br></br>
       <br></br>
-      My wife is a real estate agent; perhaps the most organized person I know; and one of the sweetest and kindest people on the earth.  Where I am loud and boisterous, she is quiet, calm, and thoughtful.
+      My wife is a real estate agent; perhaps the most organized person I know; and one of the sweetest and kindest people on the earth.  
+      Where I am loud and boisterous, she is quiet, calm, and thoughtful. 
+      Our first activity together was playing racquetball on January 26th, 2015, and she married me less than 6 months later!
       <br></br>
       <br></br>
-      My son is a prodigy! He could identify all the numbers (0-9) and letters by 18 months and now likes to memorize books (see <i>Giraffes Can't Dance</i> or <i>Room on the Broom</i> as examples of the types of books he likes).
+      My son is a prodigy! He could identify all letters (A-Z) and numbers (0-9) by 18 months! 
+      And now, to stay busy, he likes to memorize books (see <i>Giraffes Can't Dance</i> or <i>Room on the Broom</i> as examples of the types of books he has memorized).
       <br></br>
       <br></br>
       My daughter is a newborn, so we will see what she becomes.  So far, she loves smiling, so that's a good start!

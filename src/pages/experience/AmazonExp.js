@@ -78,7 +78,7 @@ function AmazonDetails() {
         </p>
         <p>
           Our goal was mostly to keep the vital services running, but we also had tasks to improve the services and keep them up-to-date.
-          For example, one of my changes helped reduce CPU usage by approximately 50%, allowing us to downscale the fleet and conserve costs.
+          For example, one of my changes helped reduce CPU usage by approximately <i>50%</i>, allowing us to downscale the fleet and conserve costs.
         </p>
         <p>
           All of our changes were run through a rigorous alpha and beta integration testing suite as well as a barrage of local tests. 
