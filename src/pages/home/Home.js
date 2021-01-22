@@ -12,7 +12,7 @@ import portrait from './profile.jpg';
 
 const useStyles = makeStyles({
   divider: {
-    margin: 30,
+    margin: '50px 30px',
   },
   longText: {
     maxWidth: 800,

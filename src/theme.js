@@ -31,6 +31,11 @@ const theme = createMuiTheme({
           color: primary[500],
         },
       }
+    },
+    MuiListItemText: {
+      primary: {
+        fontFamily: 'Consolas'
+      }
     }
   }
 })
