@@ -32,7 +32,7 @@ export default function StartImage(props) {
           direction='row'
           alignItems='stretch'
         >
-          <Grid item sm={2} md={3}>
+          <Grid item sm={2} md={4}>
             {props.left}
           </Grid>
 
@@ -40,7 +40,7 @@ export default function StartImage(props) {
             {props.center}
           </Grid>
           
-          <Grid item sm={2} md={3}>
+          <Grid item sm={2} md={2}>
             <ScrollDown onClick={clickHandler}/>
           </Grid>
 

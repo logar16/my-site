@@ -14,7 +14,10 @@ const theme = createMuiTheme({
     }
   },
   typography: {
-    fontFamily: ['Verdana', '"Consolas"', 'Courier New'].join(',')
+    fontFamily: ['Alegreya', 'Lora', 'Verdana', '"Consolas"', 'Courier New'].join(','),
+    body1: {
+      fontFamily: ['Lora', 'Alegreya', 'Verdana',].join(','),
+    }
   },
   props: {
     MuiLink: {

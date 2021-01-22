@@ -101,9 +101,11 @@ function Intro() {
   return (
     <Grid container justify='center' alignItems='center' style={{height: '100%'}}>
       <Hidden smDown>
-        <Typography className='rotated' variant='h4'>
-          Me again!  But this time, it's personal!
-        </Typography>
+        <p className='intro med-text'>
+          Me again! 
+          <br></br>
+          But this time, it's personal!
+        </p>
       </Hidden>
     </Grid>
   );
