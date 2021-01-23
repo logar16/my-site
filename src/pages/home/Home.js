@@ -113,7 +113,7 @@ function Experiences() {
 
 const elevatorPitch = `My name is Logan Jones. I'm a self-taught programmer with a Master’s degree in 
 Artificial Intelligence and Machine Learning. Over the last four years I've been working as a Software Engineer. 
-Now I'm trying to break into a new role as a ML researcher and engineer.  
+Now I'm trying to break into a new role as a Machine Learning researcher and engineer.  
 I love Reinforcement Learning and making AI agents that can make decisions on their own!`
 
 
