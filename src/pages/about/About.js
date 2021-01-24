@@ -60,7 +60,7 @@ export default function About() {
           onClick={clickHandler} 
           bgImage={profileImage}  
           strength={400}
-          height={500}
+          height={700}
           left={<Intro/>}
         />
       </div>

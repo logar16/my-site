@@ -21,6 +21,7 @@ export default function StartImage(props) {
   var strength = props.strength || 500;
   var height = props.height || window.innerHeight - 100;
   height = Math.max(height, 100);
+  height = Math.min(height, window.innerHeight - 50);
   // console.log(`props.height: ${props.height}, window: ${window.innerHeight}, height: ${height}`)
 
   return (
