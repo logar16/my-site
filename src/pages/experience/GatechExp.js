@@ -86,14 +86,15 @@ function GatechDetails() {
     <Grid container>
       <Section>
         This degree was an awesome opportunity to learn new things and stretch myself. 
-        I worked full-time while working on this degree part-time, and it was not easy.  Nevertheless, I learned how to pace myself, stay organized, and relentlessly prioritize as a result.  
+        I worked full-time while working on this degree part-time, and it was not easy.  
+        As a result, I learned how to pace myself, stay organized, and relentlessly prioritize.  
         I also learned I can do hard things.
-        It changed my mind about several things related to technology and inspired me as to what I want out of a career.
+        It changed my mind about several topics related to technology and inspired me as to what I want out of a career.
         Below are some specific skills I learned, organized by course.
       </Section>
       <Section  title='Deep Learning' id='DL'>
         In this class, I learned about automatic differentiation, the nuances of gradient descent (e.g., vanishing gradients),
-        and modern applications of deep neural networks in supervised, unsupervised and reinforcement learning domains.
+        as well as modern applications of deep neural networks in the domains of supervised, unsupervised, and reinforcement learning.
         I hand-crafted my own forward and backward passes for linear and convolutional layers (and their loss functions).
         Through this, I gained greater appreciation for the difficulties of deep learning as well as became aware of many more interesting applications of the technology.
         This class exposed me to <b>PyTorch</b>, a neural network library that I now greatly enjoy.
